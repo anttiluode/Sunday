@@ -2,274 +2,321 @@
 
 Date: 2026-08-23
 
-## Restart rule
+## Restart from here
 
-Restart from receipts, not from the 3-D/dendrite/QM metaphor.
+Do **not** restart from the original 3-D dendrite / splat / instanton story.
 
-Sunday's current object is now:
+Sunday has been audited. The current object is narrower:
 
-> **A fixed graph and local structural rule induce an anisotropic relation-space operator. Dormant one-step responses predict most of that operator and can be used before training to choose physical routings for semantic relations.**
+> **A local fixed-budget plasticity rule can write equal-marginal relational history into persistent distributed substrate state, changing later pair interactions after the teaching history and fast state are gone. Much of the substrate's apparent computation is nevertheless explainable as fixed-reservoir feature geometry plus ordinary six-terminal symmetry.**
 
-Gate 12 tested whether adding dormant READ information robustly improves that routing beyond Gate 11's already strong WRITE-only score. It **failed narrowly**. Do not round it into a pass.
+That sentence contains both the surviving result and the demotion.
 
-The live residual is therefore not “find a nicer utility.” It is:
-
-> **Can we predict from dormant state when read-aware routing will differ enough from write-only routing to be worth using?**
-
-## Lineage
+Read, in order:
 
 ```text
-Gate 0   signal writes spatial transfer                 PASS
-         frozen dynamics linear                         calculation claim KILLED
-Gate 1   matched coactivity writes pair relation        PASS
-Gate 2   same graph with xyz erased                     EXACT TIE / 3-D primitive KILLED
-Gate 3   locality destruction weakens relation          clustering-only explanation FAIL
-Gate 4   matched low-gap attacker                       slow mixing sufficiency KILLED
-Gate 5   semantic/topology boundary alignment           PASS
-Gate 6   six-terminal compositional relation matrix     PASS / explicit table cheaper
-Gate 7   additive & multiplicative endpoint scalars     KILLED
-Gate 8   arbitrary/isotropic relation memory            FAIL / KILLED
-Gate 9   16-code relation-space tomography              PASS
-Gate 10  dormant one-step write/read Jacobian           PASS
-Gate 11  pre-training WRITE routing                     PASS
-Gate 12  read-aware clean routing                       FAIL narrowly
+README.md
+this file
+docs/AUDIT_RESULT.md
+KILL_LEDGER.md
 ```
 
-## Gates 6–8 — relation memory and anisotropy
+Historical gate details remain in `docs/` and machine-readable fresh receipts in `receipts/`.
+
+---
+
+## Current verdict in four pieces
+
+### 1. Persistent structural relation memory survives
+
+The strongest pre-audit result is still Gates 6–7.
+
+Two matched six-terminal training programs have identical terminal marginals; only which terminals co-occur differs. Under a fixed total structural-mass budget, the local current-based rule leaves different persistent mass states. After teaching ends and fast dynamical state is reset, the two frozen substrates respond differently to later pair probes.
 
 Gate 6 fresh `380000..380009`:
 
 ```text
-trained-edge signs                 60/60
-mean signed contrast               0.002666
-trained / unused magnitude         12.303x
-mass-shuffle residual              0.061x
+registered trained-edge signs        60/60
+mean signed differential contrast    0.002666
+trained / unused |dI|                12.303x
+mass-shuffle residual                0.061x
 ```
 
-Gate 7 fresh `400000..400009` kills one-scalar endpoint reductions:
+Gate 7 kills one-scalar endpoint reductions:
 
 ```text
-additive all-pair R^2              0.0753 mean
-held-out additive trained signs    1/60
-negative multiplicative cycle      10/10
-```
-
-Gate 8 then shows that several balanced relation directions are not equally writable. This kills the isotropic pair-table story and exposes a writable relation geometry.
-
-## Gate 9 — relation-space tomography PASS
-
-All 16 controlled geometry-balanced perfect-matching contrasts span rank 7. Leave one whole relation direction out, fit on the other 15, predict the unseen 15-pair output.
-
-Fresh `440000..440003`:
-
-```text
-full operator LOO NMSE               0.003138
-held-out cosine                      0.996531
-scalar-gain attacker NMSE            0.807419
-edge-diagonal attacker NMSE          0.557227
-
-top-3 operator energy                0.977688
-rank-3 held-out NMSE                 0.037298
-rank-3 held-out cosine               0.954902
-cross-seed weakest-mode mean         0.902540
-```
-
-Safe statement: over the controlled rank-7 relation-program span, finite learning/readout behaves approximately as a predictable linear cross-edge operator with most energy in about three preferred input modes.
-
-## Gate 10 — dormant write/read mechanism PASS
-
-For each of 15 coactive physical terminal pairs, start from uniform mass, perform one ordinary teacher episode and one redistribution, giving pair-specific write direction `w_e`. Measure dormant nonlinear read sensitivity along each `w_e` and compose the first-order operator.
-
-Fresh `460000..460003`:
-
-```text
-zero-fresh-fit NMSE                         0.074607
-mean per-direction cosine                   0.969453
-dormant projected top-3 energy              0.964520
-weakest dormant-vs-finite mode mean         0.918134
-
-write-only output attacker NMSE             0.916042
-same-permutation write-location attacker    0.920388
+additive endpoint all-pair R^2       0.0753 mean
+held-out trained-edge sign           1/60
+negative multiplicative cycle        10/10
 ```
 
 Safe statement:
 
-> Most dominant relation geometry is already latent in dormant one-step write directions composed with dormant nonlinear read sensitivity; long training mainly amplifies and perturbs it.
+> Relational co-occurrence history can become persistent distributed edge/cycle-space structure in this toy substrate without explicit learned pair weights.
 
-## Gate 11 — pre-training WRITE routing PASS
+This does **not** imply parameter efficiency; an explicit pair table is much cheaper.
 
-Target semantic relation is fixed to historically weak C3. Keep only semantic-to-physical mappings where both arms have exact circular distance multiset `(1,2,2)`. Exactly 18 assignments remain, so circular geometry alone ties them all.
+---
 
-Before training, score each assignment by
+### 2. Reservoir audit demotes the computation claim
 
-```text
-s(q) = ||q W||.
-```
+Audit A uses six new dormant substrates `520000..520005`.
 
-Then train all 18.
-
-Fresh `480000..480005`:
+Gate 10 already defines the dormant one-step write feature map
 
 ```text
-mean Pearson(score, finite contrast)          0.936925
-mean Spearman                                 0.933333
-pair-label-shuffled W Pearson                -0.102667
-pair-label-shuffled W Spearman               -0.066667
-BEST > WORST                                  6/6
-BEST / |WORST| finite contrast                12.395x
+x(q) = q W
 ```
 
-A development-fixed universal route is already useful, but substrate-specific `W` raises mean BEST contrast about 29%.
+for the controlled Gate-9 relation program `q`.
 
-Gate-11 scar: maximizing write strength does not guarantee low leakage. Fresh `480003` BEST has trained/unused only `0.631x` despite all registered signs being correct.
-
-## Gate 12 — read-aware clean routing FAIL
-
-Gate 12 keeps the exact same C3 target and 18 geometry-matched assignments.
-
-Before training, use Gate 10's dormant operator
+Fresh audit:
 
 ```text
-y0(q) = q B0
+rank(Q)                              7
+rank(QW)                             7 on 6/6 seeds
+minimum leave-one-code-out rank      7
+LOO linear q <- qW NMSE              5.65e-30
+LOO cosine                           1.0
 ```
 
-and define the fixed clean utility
+Therefore the fixed dormant substrate features preserve the complete tested relation span. Since Gate 9 already established an almost-linear finite map `y ~= qB`, a conventional trained linear readout on fixed `qW` features can represent the same class of transforms:
 
 ```text
-contrast(q,y) = (q . y) / 6
-cosine(q,y)   = (q . y) / (||q|| ||y||)
-U(q,y)        = contrast(q,y) * |cosine(q,y)|
+q --W--> fixed dormant features x --trained linear readout--> y
 ```
 
-READ-AWARE chooses max predicted `U`.
+So kill this broad interpretation:
 
-Attackers:
+> Gate 9/10 by itself discovered a new computing primitive beyond reservoir-style fixed features + trained readout.
+
+What remains different is **where memory lives**. Sunday changes persistent internal `mass`. The fixed-reservoir null leaves the substrate unchanged and stores learned task information in an external readout.
+
+Receipt:
 
 ```text
-WRITE-ONLY       max ||qW||
-CONTRAST-ONLY    max contrast(q, qB0)
+receipts/audit_reservoir_null_fresh6.json
 ```
 
-Development seeds `490000..490003` were consumed only to freeze thresholds. Fresh evidence is `500000..500005`.
-
-### Fresh receipt
+Script:
 
 ```text
-mean predicted-U / finite-U Pearson             0.939125   PASS
-mean Spearman                                    0.863889   PASS
-
-READ finite U >= WRITE finite U                  6/6        PASS
-mean READ clean utility                          0.0007218965
-mean WRITE clean utility                         0.0006704296
-READ / WRITE clean utility                       1.076767x
-required                                         >=1.080000x  FAIL
-
-mean CONTRAST-ONLY clean utility                 0.0006780098
-READ / CONTRAST-ONLY clean utility               1.064729x   PASS
-
-mean READ trained/unused                         1.351945x
-mean WRITE trained/unused                        1.049575x
-READ / WRITE selectivity                         1.288088x   PASS
-
-READ / WRITE registered contrast                 1.002614x   PASS
-mean READ trained-edge sign fraction             0.916667    PASS
+experiments/audit_reservoir_null.py
 ```
 
-**Gate 12 fails because `1.076767 < 1.08`. Do not rescue it by rounding.**
+---
 
-### What nevertheless survived
+### 3. Ring-symmetry audit demotes the mysterious-three-mode story
 
-Preregistered secondary blocks say something real:
+Gate 9 reported a stable ~three-dimensional preferred relation subspace. The six terminals are placed on an exact ring, so Audit B attacks that before assigning any deeper meaning.
 
-- dormant `B0` predicts route-level clean utility strongly across all 18 assignments;
-- the read-aware cleanliness term beats a contrast-only router by `1.0647x`;
-- mean trained/unused selectivity improves by `1.288x` while mean registered contrast is unchanged;
-- the read-aware route beats or ties write-only on every fresh seed;
-- but three of six seeds choose the same READ and WRITE route, leaving pooled incremental utility just below the registered minimum.
-
-Important scars:
+The controlled rank-7 relation span decomposes under ring rotation into:
 
 ```text
-500001   READ R02 vs WRITE R00
-         clean utility ~1.88x higher
-         selectivity 0.686 -> 1.533
-
-500002   READ ties WRITE R07 but beats CONTRAST R00
-         cleanliness term itself matters
-
-500004   READ R00 vs WRITE R02
-         selectivity 0.788 -> 1.756
-         but contrast falls and only 4/6 trained signs are correct
+k=1   dimension 2
+k=2   dimension 4
+k=3   dimension 1
 ```
 
-Safe statement:
-
-> **Dormant read information is predictive and can materially improve routing on some substrates, especially selectivity, but Gate 12 did not establish the preregistered minimum robust incremental clean-utility gain over Gate 11's write-only router.**
-
-## Current residual — predict when READ matters
-
-Do **not** lower `1.08`, retune the same utility, or rerun C3 until it passes.
-
-The useful phenomenon is now the disagreement structure:
+A geometry-only three-dimensional candidate was fixed from exploratory dormant analysis:
 
 ```text
-some substrates: READ == WRITE assignment
-other substrates: READ != WRITE and gains can be large
+nearest-neighbour edge-orbit k=2 copy (2-D)
++
+k=3 parity mode (1-D)
 ```
 
-A clean next gate would use dormant quantities only to predict, before finite training, whether a substrate/candidate family lies in a high-disagreement regime where read-aware routing should matter.
-
-Possible dormant diagnostics to preregister and attack:
+Fresh **full 40-cycle Gate-9 training** on `522000..522003`:
 
 ```text
-angle / principal-angle gap between write-only and write+read preferred modes
-ranking disagreement between ||qW|| and U(q,qB0)
-spread between top candidate scores
-read-induced rotation magnitude ||qB0 - alpha qW_like||
-leakage predicted specifically on the WRITE-best route
+finite operator top-3 energy               0.9781
+
+broad k2+k3 sector:
+  mean top-3 subspace capture              0.9633
+  mean weakest principal cosine            0.9475
+
+fixed geometry-only 3-D candidate:
+  mean top-3 subspace capture              0.8783
+  mean weakest principal cosine            0.8587
 ```
 
-Then test a policy such as:
+Mean learned top-three sector fractions:
 
 ```text
-if dormant disagreement is small: use cheap WRITE routing
-if dormant disagreement is large: pay for READ-aware routing
+k1    0.0367
+k2    0.6564
+k3    0.3069
 ```
 
-The policy must be chosen on development and tested on new substrates/tasks. The target should be **decision value**, not another post-hoc correlation.
+So most of the preferred-mode story is ordinary port geometry/symmetry.
 
-A second clean option is to construct a new candidate family where WRITE strength and READ cleanliness are deliberately decorrelated by design, then test whether read-aware routing wins prospectively. Do not search that family using fresh outcomes.
+But not all of it. The `k=2` sector is four-dimensional; symmetry alone does not choose the particular two-dimensional copy/rotation used by a substrate. The fixed 3-D geometry candidate misses about 12% of subspace energy on average, with one weakest fresh cosine `0.777`.
 
-## Secondary mechanistic residual — derive W from graph quantities
+Live mechanistic residual:
 
-Gate 11/12 still require teacher episodes to measure dormant `W`. A deeper mechanism would predict `W` from ordinary graph structure:
+> **What graph/current-flow/write-read structure selects the substrate-specific orientation inside the symmetry-allowed `k=2` sector?**
+
+Receipt:
 
 ```text
-terminal-to-soma current-flow overlap
-pairwise corridor overlap
-Laplacian / diffusion modes
-community-boundary incidence
-local bottleneck placement
+receipts/audit_ring_symmetry_fresh4.json
 ```
 
-Gate 3 already blocks clustering alone; Gate 4 blocks spectral-gap alone.
+Script:
 
-## Hard stop lines
+```text
+experiments/audit_ring_symmetry.py
+```
 
-- fixed total structural mass unless a gate explicitly tests growth;
-- no explicit learned pair table while claiming morphology stores relations;
-- renderer stays read-only;
-- Gate 0 remains linear routing;
-- coordinates are not the execution primitive;
-- clustering alone not established;
-- low spectral gap alone insufficient;
-- Gate 6 has no efficiency advantage over explicit tables;
-- Gate 8 killed arbitrary/isotropic relation memory;
-- Gate 10 is first-order approximate, not exact finite dynamics;
-- Gate 11 controls writability/contrast, not guaranteed selectivity;
-- Gate 12 is a **failed** incremental-control gate despite strong secondary evidence;
-- no QM/phase/ferroic/growth/visual-world mechanism until a demonstrated residual requires it.
+---
 
-## Instanton / QM / Feigenbaum
+### 4. Gate 12 remains a failure
 
-Parked. Nothing in the live Sunday residual requires tunneling, phase, or fractal growth.
+Do not lose this during cleanup.
+
+Fresh `500000..500005`:
+
+```text
+READ / WRITE clean utility     1.076767x
+registered minimum             1.080000x
+```
+
+Therefore Gate 12 **FAILS**.
+
+Dormant READ information still predicts cleanliness and improves selectivity on some substrates, but do not lower the threshold or keep optimizing the same C3/18-route toy.
+
+---
+
+## What has been killed or demoted
+
+Short version; `KILL_LEDGER.md` is authoritative.
+
+```text
+pixels as recurrent state                         killed
+literal branch birth as first explanation         demoted
+Gate-0 structure == calculation                   killed (linear)
+3-D coordinates == primitive                      killed
+clustering alone                                  not established
+low spectral gap / slow mixing alone              killed
+endpoint scalar explanation                       killed
+isotropic arbitrary relation memory               killed
+long training invents preferred modes             killed as first explanation
+Gate-9 transform beyond reservoir readout          killed by audit
+mysterious/new three-mode algebra                 demoted by symmetry audit
+Gate-12 >=8% incremental READ control             failed
+```
+
+Do not import QM, phase, ferroic memory, growth, visual/world data, Feigenbaum/fractal stories, or a learned decoder merely to escape an audit result.
+
+---
+
+## Relation to reservoir computing
+
+Sunday is now explicitly in the adaptive/physical-reservoir neighborhood.
+
+Known reservoir ideas already cover:
+
+- a complex fixed substrate exposing useful nonlinear features;
+- trained linear readouts;
+- input masks/routing that determine which modes are excited;
+- structural-plasticity variants that modify reservoir connectivity/state.
+
+Therefore do not claim broad novelty from those ingredients.
+
+The remaining Sunday-specific experimental question is more constrained:
+
+> **When, if ever, is it useful to store relational history by physically changing the substrate itself rather than leaving the substrate fixed and putting learning in an observer/readout?**
+
+That requires a fair resource/task comparison, not another metaphor.
+
+See `docs/AUDIT_RESULT.md` for references and exact interpretation.
+
+---
+
+## Good next experiments — choose one, do not automatically stack them
+
+### A. Persistent-memory vs reservoir audit
+
+Construct a task where:
+
+```text
+training/history input ends
+fast state is explicitly reset
+future query arrives later
+```
+
+Compare:
+
+```text
+Sunday structural memory
+fixed reservoir + trained external readout
+adaptive/structural reservoir baseline
+explicit relation table
+```
+
+Account for where learned state is stored and how many trainable/persistent scalars each method receives.
+
+The question is not accuracy alone. Ask whether in-medium persistence buys anything under matched resource/latency/locality constraints.
+
+### B. Explain the remaining symmetry-sector rotation
+
+Stay dormant/linear and try to predict the selected two-dimensional slice inside the four-dimensional `k=2` relation sector from ordinary graph quantities:
+
+```text
+terminal-to-soma current-flow fields
+pairwise current overlap
+edge betweenness / corridor incidence
+Laplacian diffusion modes
+write/read Jacobian alignment
+```
+
+Any candidate must predict held-out substrate orientation, not merely correlate after seeing it.
+
+### C. Leave the tangent regime deliberately
+
+Gate 10 says dormant first-order geometry predicts 40-cycle training surprisingly well. Sweep training strength:
+
+```text
+1, 2, 5, 10, 20, 40, 80, 160 cycles
+```
+
+Track when dormant prediction fails and whether **new useful structural modes** appear. If no new modes appear, Sunday is mostly a fixed low-dimensional response geometry being amplified.
+
+This is a better test of genuine self-construction than making the current toy larger.
+
+---
+
+## Reproduction shortcuts
+
+```bash
+pip install -e .
+
+python experiments/gate6_relation_matrix.py
+python experiments/gate7_endpoint_null.py
+python experiments/gate9_writable_subspace.py
+python experiments/gate10_dormant_jacobian.py
+
+python experiments/audit_reservoir_null.py
+# slow: retrains all 16 Gate-9 codes on four substrates
+python experiments/audit_ring_symmetry.py
+
+python -m unittest discover -s tests -v
+```
+
+Stored fresh audit numbers should be compared against the JSON receipts rather than regenerated until they look nicer.
+
+---
+
+## Restart rule for the next Sol
+
+Do not add an idea first.
+
+Ask:
+
+1. What exact surviving claim is being tested?
+2. What boring known mechanism would reproduce it?
+3. Where is learned information allowed to live in each arm?
+4. What is held fixed?
+5. What result would actually demote the Sunday story further?
+
+If the boring attacker wins, record it and move the boundary.
