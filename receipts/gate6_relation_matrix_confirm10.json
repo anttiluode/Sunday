@@ -1,0 +1,38 @@
+{
+  "gate": "Gate 6 relation-matrix composition",
+  "gate_pass": true,
+  "seed_start": 380000,
+  "seed_count": 10,
+  "metrics": {
+    "pooled_expected_sign_fraction": 1.0,
+    "fraction_seeds_all_6_signs": 1.0,
+    "mean_signed_contrast": 0.002666142539169165,
+    "mean_trained_abs_differential": 0.002666142539169165,
+    "mean_unused_abs_differential": 0.00021671085092415167,
+    "trained_vs_unused_abs_ratio": 12.302764387660076,
+    "mean_shuffle_signed_contrast": -0.00016365426504965378,
+    "shuffle_signed_contrast_ratio": 0.06138241397275498,
+    "max_per_seed_shuffle_ratio": 0.4511682369916249,
+    "min_signed_edge_overall": 0.0001249359810061388,
+    "max_mass_budget_error": 5.684341886080802e-14
+  },
+  "thresholds": {
+    "pooled_expected_sign_fraction_min": 0.90,
+    "mean_signed_contrast_min": 0.00070,
+    "trained_vs_unused_abs_ratio_min": 5.0,
+    "shuffle_signed_contrast_ratio_max": 0.35,
+    "mass_budget_error_max": 1e-10
+  },
+  "per_seed_summary": [
+    {"seed":380000,"sign_fraction":1.0,"signed_contrast":0.0018159996674600397,"trained_unused_ratio":22.770883293248243,"shuffle_ratio":0.009040240602414252},
+    {"seed":380001,"sign_fraction":1.0,"signed_contrast":0.002276182322157929,"trained_unused_ratio":9.252302853259,"shuffle_ratio":0.018728710183409686},
+    {"seed":380002,"sign_fraction":1.0,"signed_contrast":0.0023064929629114856,"trained_unused_ratio":12.171247607752846,"shuffle_ratio":0.012615694735263272},
+    {"seed":380003,"sign_fraction":1.0,"signed_contrast":0.001533248316144553,"trained_unused_ratio":12.403342204590537,"shuffle_ratio":0.4511682369916249},
+    {"seed":380004,"sign_fraction":1.0,"signed_contrast":0.003898307719021634,"trained_unused_ratio":13.832791832768857,"shuffle_ratio":0.011842584855716752},
+    {"seed":380005,"sign_fraction":1.0,"signed_contrast":0.0030927794619249084,"trained_unused_ratio":18.294755107182368,"shuffle_ratio":0.16507147590048152},
+    {"seed":380006,"sign_fraction":1.0,"signed_contrast":0.0028458633194694675,"trained_unused_ratio":15.308950228521306,"shuffle_ratio":0.00833965932371108},
+    {"seed":380007,"sign_fraction":1.0,"signed_contrast":0.0026221624356412526,"trained_unused_ratio":11.123046931416292,"shuffle_ratio":0.18087706513937024},
+    {"seed":380008,"sign_fraction":1.0,"signed_contrast":0.001591202101185121,"trained_unused_ratio":3.699800647524121,"shuffle_ratio":0.040877805527875295},
+    {"seed":380009,"sign_fraction":1.0,"signed_contrast":0.004679187085775261,"trained_unused_ratio":20.737206298740997,"shuffle_ratio":0.0014469118443091492}
+  ]
+}
