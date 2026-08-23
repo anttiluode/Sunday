@@ -82,7 +82,6 @@ def dormant_operator(
     cfg = cfg or CompositionConfig()
     W = one_step_write_matrix(seed, cfg)
     D = read_directional_matrix(seed, W, epsilon=epsilon, cfg=cfg)
-    # q = +arm_A -arm_B, while finite target is F(B)-F(A).
     B0 = -D
     return {"W": W, "D": D, "B0": B0}
 
@@ -140,26 +139,23 @@ def analyze_seed(
     per_seed_gain = optimal_scalar(dormant_Y, finite_Y)
     per_seed_best = per_seed_gain * dormant_Y
 
-    # Finite operator only for mode analysis; it never modifies B0.
     finite_B = np.linalg.lstsq(Q, finite_Y, rcond=None)[0]
     input_projector = np.linalg.pinv(Q) @ Q
     dormant_B_projected = input_projector @ B0
 
     U0, s0, _ = np.linalg.svd(dormant_B_projected, full_matrices=False)
-    Uf, sf, _ = np.linalg.svd(finite_B, full_matrices=False)
+    Uf, _, _ = np.linalg.svd(finite_B, full_matrices=False)
     mode_cosines = principal_cosines(U0[:, :3], Uf[:, :3])
     dormant_energy = s0 * s0
     dormant_top3 = float(
         dormant_energy[:3].sum() / max(float(dormant_energy.sum()), 1e-30)
     )
 
-    # Write-only attacker: overlap of pair-specific mass-write directions.
     write_B = -(write @ write.T)
     write_Y = Q @ write_B
     write_gain = optimal_scalar(write_Y, finite_Y)
     write_pred = write_gain * write_Y
 
-    # Strong surgery: same permutation preserves W W^T exactly.
     pseed = permutation_seed if permutation_seed is not None else 970000 + seed
     write_perm = permute_write_locations(write, pseed, cfg)
     perm_D = read_directional_matrix(seed, write_perm, epsilon=epsilon, cfg=cfg)
@@ -174,6 +170,13 @@ def analyze_seed(
         for entry in finite_raw["codes"]
     ))
     write_mass_error = float(np.max(np.abs(write.sum(axis=1))))
+    all_finite = bool(
+        np.all(np.isfinite(primary))
+        and np.all(np.isfinite(finite_Y))
+        and np.all(np.isfinite(dormant_B_projected))
+        and np.all(np.isfinite(write_pred))
+        and np.all(np.isfinite(perm_pred))
+    )
 
     return {
         "seed": int(seed),
@@ -202,7 +205,5 @@ def analyze_seed(
         )),
         "max_one_step_write_mass_sum_error": write_mass_error,
         "max_finite_mass_budget_error": finite_mass_error,
-        "all_finite": bool(np.all(np.isfinite([
-            primary, finite_Y, dormant_B_projected, write_pred, perm_pred
-        ]))),
+        "all_finite": all_finite,
     }
