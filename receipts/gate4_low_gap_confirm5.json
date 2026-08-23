@@ -1,0 +1,57 @@
+{
+  "gate": "Gate 4 low-gap non-geometric attacker",
+  "gate_pass": true,
+  "seed_start": 340000,
+  "seed_count": 5,
+  "partitions_per_seed": 3,
+  "modular_count": 15,
+  "metrics": {
+    "geo_mean_interaction": 0.00779967711838445,
+    "mean_expander_recovery": 0.21184967995392592,
+    "mean_modular_recovery": 0.22330807370018252,
+    "median_modular_recovery": 0.20976672789251885,
+    "fraction_recovery_le_0_5": 1.0,
+    "max_modular_recovery": 0.4683539956086624,
+    "min_gap_ratio": 0.8139015037633229,
+    "max_gap_ratio": 1.1311951462090009,
+    "mean_gap_ratio": 1.0062233037136095,
+    "min_long_edge_fraction": 0.8792558792558792,
+    "mean_long_edge_fraction": 0.8880735532653112,
+    "max_clustering_ratio": 0.34011933093914304,
+    "mean_clustering_ratio": 0.31544527057553406,
+    "max_strength_rel_error": 9.493046965310301e-11,
+    "all_connected": true,
+    "all_degree_exact": true,
+    "all_finite": true
+  },
+  "recovery_by_seed": {
+    "340000": [0.109, 0.328, 0.271],
+    "340001": [0.272, 0.125, 0.468],
+    "340002": [0.250, 0.253, 0.127],
+    "340003": [0.086, 0.177, 0.460],
+    "340004": [0.06742082430137916, 0.20976672789251885, 0.14706673068034554]
+  },
+  "thresholds": {
+    "geo_interaction_min": 0.0015,
+    "strength_rel_error_max": 1e-8,
+    "gap_ratio_min": 0.60,
+    "gap_ratio_max": 1.25,
+    "long_edge_fraction_min": 0.75,
+    "clustering_ratio_max": 0.45,
+    "mean_modular_recovery_max": 0.50,
+    "recovery_fraction_min": 0.70
+  },
+  "checks": {
+    "geo_interaction_present": true,
+    "all_modular_connected": true,
+    "all_modular_degree_exact": true,
+    "all_modular_finite": true,
+    "modular_strength_matched": true,
+    "modular_gap_matched_low": true,
+    "modular_gap_matched_high": true,
+    "modular_stays_nongeometric": true,
+    "modular_stays_less_clustered": true,
+    "slow_mixing_not_sufficient_mean": true,
+    "slow_mixing_not_sufficient_fraction": true
+  }
+}
