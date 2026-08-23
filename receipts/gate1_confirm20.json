@@ -1,0 +1,45 @@
+{
+  "gate": "Gate 1 - local nonlinear overlap",
+  "status": "PASS",
+  "confirmation_seed_start": 240000,
+  "confirmation_seed_count": 20,
+  "history_programs": {
+    "H_AB": [[1, 2], [3], [4]],
+    "H_CD": [[3, 4], [1], [2]],
+    "terminal_counts_each_cycle": {"1": 1, "2": 1, "3": 1, "4": 1}
+  },
+  "thresholds": {
+    "positive_fraction_min": 0.8,
+    "mean_overlap_separation_min": 0.04,
+    "mean_interaction_separation_min": 0.0015,
+    "distributed_to_soma_min": 20.0,
+    "shuffle_signed_ratio_max": 0.25,
+    "mass_budget_error_max": 1e-10
+  },
+  "metrics": {
+    "AB_overlap_positive_fraction": 1.0,
+    "CD_overlap_positive_fraction": 1.0,
+    "AB_interaction_positive_fraction": 1.0,
+    "CD_interaction_positive_fraction": 1.0,
+    "mean_overlap_separation": 0.11605558202767287,
+    "mean_AB_overlap_separation": 0.12363238193560688,
+    "mean_CD_overlap_separation": 0.10847878211973885,
+    "mean_interaction_separation": 0.008947787525938566,
+    "mean_AB_interaction_separation": 0.008801986430601797,
+    "mean_CD_interaction_separation": 0.009093588621275336,
+    "mean_abs_soma_only_separation": 8.639713486435069e-06,
+    "distributed_to_soma_ratio": 1035.6578999971694,
+    "shuffle_overlap_signed_mean": 0.004637911318641875,
+    "shuffle_interaction_signed_mean": 0.0003738407635942133,
+    "shuffle_overlap_signed_ratio": 0.03996284571246205,
+    "shuffle_interaction_signed_ratio": 0.04178024595582915,
+    "max_mass_budget_error": 5.684341886080802e-14
+  },
+  "interpretation": "Changing only input coactivation grouping writes a repeatable pair-specific route-overlap relationship into fixed-budget 3-D material. A fixed distributed local cubic nonlinearity converts that structural relationship into a small but consistent pairwise interaction; soma-only nonlinearity and spatial mass shuffling do not explain the signed effect.",
+  "limitations": [
+    "The normalized pair-interaction program effect is about 0.9 percentage points, not a large task-level effect.",
+    "Coactivation produces route separation under this rule; the reason for the sign is unresolved.",
+    "An abstract graph can reproduce the effective conductance matrix, so Euclidean 3-D necessity is not established.",
+    "Broad parameter robustness has not yet been established."
+  ]
+}
