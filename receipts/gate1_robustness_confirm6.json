@@ -1,0 +1,39 @@
+{
+  "attacker": "Gate 1 nonlinear operating-point sweep",
+  "status": "PASS",
+  "confirmation_seed_start": 260000,
+  "confirmation_seed_count": 6,
+  "gammas": [5, 10, 20, 50, 100],
+  "amplitudes": [2, 5, 10],
+  "thresholds": {
+    "overall_positive_fraction_min": 0.95,
+    "minimum_cell_positive_fraction_min": 0.8,
+    "weakest_cell_mean_separation_min_exclusive": 0.0
+  },
+  "metrics": {
+    "total_pair_effects": 180,
+    "overall_positive_fraction": 1.0,
+    "minimum_cell_positive_fraction": 1.0,
+    "weakest_cell_mean_separation": 0.0001260741060128273,
+    "minimum_observed_separation": 0.000058988049205511896,
+    "overall_mean_separation": 0.003676115855276955
+  },
+  "cells": [
+    {"amplitude": 2, "gamma": 5, "positive_fraction": 1.0, "mean_separation": 0.0001260741060128273},
+    {"amplitude": 2, "gamma": 10, "positive_fraction": 1.0, "mean_separation": 0.00027677454069933023},
+    {"amplitude": 2, "gamma": 20, "positive_fraction": 1.0, "mean_separation": 0.0005906974406595015},
+    {"amplitude": 2, "gamma": 50, "positive_fraction": 1.0, "mean_separation": 0.0014305464666606084},
+    {"amplitude": 2, "gamma": 100, "positive_fraction": 1.0, "mean_separation": 0.0024701039626809063},
+    {"amplitude": 5, "gamma": 5, "positive_fraction": 1.0, "mean_separation": 0.0009282301517720498},
+    {"amplitude": 5, "gamma": 10, "positive_fraction": 1.0, "mean_separation": 0.0017262573024177722},
+    {"amplitude": 5, "gamma": 20, "positive_fraction": 1.0, "mean_separation": 0.0028784423577141696},
+    {"amplitude": 5, "gamma": 50, "positive_fraction": 1.0, "mean_separation": 0.004881622992506927},
+    {"amplitude": 5, "gamma": 100, "positive_fraction": 1.0, "mean_separation": 0.006677067835686748},
+    {"amplitude": 10, "gamma": 5, "positive_fraction": 1.0, "mean_separation": 0.0028784423577141696},
+    {"amplitude": 10, "gamma": 10, "positive_fraction": 1.0, "mean_separation": 0.0043499708550912885},
+    {"amplitude": 10, "gamma": 20, "positive_fraction": 1.0, "mean_separation": 0.0060779466798910955},
+    {"amplitude": 10, "gamma": 50, "positive_fraction": 1.0, "mean_separation": 0.008640681371933025},
+    {"amplitude": 10, "gamma": 100, "positive_fraction": 1.0, "mean_separation": 0.011208879407713904}
+  ],
+  "interpretation": "Gate 1's pair-relation sign survived all 15 tested nonlinear operating points on six new clouds. This kills the narrow one-setting objection but does not establish robustness to geometry, learning-rule, port-placement, or nonlinear-family changes."
+}
