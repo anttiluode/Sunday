@@ -8,7 +8,9 @@ Restart from receipts, not from the 3-D/dendrite/QM metaphor.
 
 Sunday's live question is now:
 
-> **Is the compositional pair-relation matrix genuinely pair-specific/distributed, or can it be reduced to simple endpoint factors / a very low-rank code?**
+> **Does the same fixed-budget structural rule support several independent relation codes, or is Gate 6/7 a special property of one alternating six-cycle?**
+
+A secondary unresolved attacker is low-rank latent compression of the 15-entry pair matrix. Do not confuse the two questions: Gate 7 killed one-scalar endpoint reductions, not rank-2 embeddings.
 
 ## Lineage
 
@@ -35,6 +37,11 @@ Gate 5  identical graph, input-role alignment changed   PASS
 Gate 6  six-terminal relation-matrix composition        PASS
         60/60 trained relation signs correct
         explicit pair table efficiency attacker         TABLE WINS
+
+Gate 7  endpoint-factor null attack                     PASS
+        additive endpoint reduction                     KILLED
+        pure multiplicative sign factor                 KILLED
+        rank-2 / nonlinear endpoint embedding            OPEN
 ```
 
 ## Gate 0 — route, not calculation
@@ -148,40 +155,105 @@ Scars:
 380005 weakest trained signed edge ~0.000125
 ```
 
-The pooled preregistered receipt still passes strongly.
-
 Safe statement:
 
 > A fixed-budget distributed structural state can simultaneously encode several matched coactivity relations such that a frozen nonlinear pair-interaction matrix distinguishes which relations belonged to which training program, without explicit pair-specific learned weights.
 
 This is Sunday's first compositional result.
 
-## Do not claim efficiency
+## Gate 7 — endpoint-factor null PASS
 
-The explicit pair-table attacker wins embarrassingly.
+Gate 7 repeats Gate 6 unchanged on fresh `400000..400009` and analyzes the 15-entry differential matrix.
 
-A full binary table over six terminals needs only 15 bits for all unordered pair labels. Sunday currently uses roughly 249 plastic floating masses plus a graph. Gate 6 establishes distributed compositional storage, **not** compression or parameter efficiency.
-
-## Current residual — attack pair specificity
-
-Before adding capacity, recurrence, phase, growth, world data, or richer nonlinearities, ask whether Gate 6's 15-entry differential matrix is really pair-specific.
-
-Strong nulls:
+Additive endpoint null:
 
 ```text
-endpoint additive:        dI(i,j) ~= a_i + a_j
-endpoint multiplicative:  dI(i,j) ~= a_i a_j
-rank-1 / rank-2 symmetric pair matrix
-simple endpoint route-strength or endpoint-mass model
+dI(i,j) = a_i + a_j
 ```
 
-A clean next gate should fit these null models **using only training/other pair entries** and test held-out pair prediction/sign recovery. Do not fit and score the same six entries without degrees-of-freedom accounting.
+Exact annihilator:
 
-The useful question:
+```text
+C = d12 - d23 + d34 - d45 + d56 - d16 = 0
+```
 
-> Does the relation matrix contain irreducible pair structure beyond what can be explained by six terminal scalars or a tiny low-rank embedding?
+for every additive endpoint model.
 
-If a six-scalar endpoint model reproduces all trained signs/effects, demote the composition story. If it fails while the distributed matrix remains stable, the case for a genuinely relational structural code strengthens.
+Fresh receipt:
+
+```text
+observed trained signs                       60/60
+mean cycle contrast C                        0.018913
+minimum C                                    0.009918
+additive all-pair R^2 mean/max               0.0753 / 0.2448
+additive in-sample trained sign accuracy      0.5833
+additive leave-one-trained-edge-out signs     1/60 = 0.0167
+negative trained-cycle product seeds          10/10
+mass budget error                              ~5.7e-14
+```
+
+The pure multiplicative sign null
+
+```text
+dI(i,j) = a_i a_j
+```
+
+is also incompatible with the observed six-cycle code because its cycle product is `product_i a_i^2 >= 0`, while all ten fresh observed products are negative.
+
+Safe statement:
+
+> The learned differential relation matrix contains a reproducible edge/cycle-space component that cannot be reduced to six additive endpoint scalars, and its registered six-cycle sign code is incompatible with a pure multiplicative endpoint-sign factorization.
+
+Do **not** upgrade this to “irreducible high-dimensional relation memory.” Rank-2 / nonlinear endpoint embeddings are still open.
+
+## Do not claim efficiency
+
+The explicit pair-table attacker still wins embarrassingly.
+
+A full binary table over six terminals needs only 15 bits for all unordered pair labels. Sunday currently uses roughly 249 plastic floating masses plus a graph. Gates 6–7 establish distributed compositional/pair-specific structure, **not** compression or parameter efficiency.
+
+## Current residual — independent-code generality
+
+The strongest next experiment is not more biology and not more capacity.
+
+Gate 6/7 used one very structured contrast: two alternating perfect matchings on a hexagon. It may be an especially easy direction in edge space.
+
+Construct several additional pairs of relation programs with all of these matched:
+
+```text
+same six physical terminals
+same terminal marginals
+same number of trained pairs
+matched pair-distance multiset where geometry is present
+same training count / mass budget / dynamics
+```
+
+but whose differential edge-label vectors are linearly independent of the original alternating cycle and of one another.
+
+For each code, preregister expected trained signs and require:
+
+```text
+high held-out/fresh sign recovery
+trained edges >> unused edges
+same-permutation mass shuffle destroys contrast
+no single additive endpoint explanation
+```
+
+Then inspect the span/rank of the successfully stored code vectors. If only the original alternating cycle works, demote the composition story to a special symmetry. If several independent codes work under the same substrate/rule, Sunday has a much stronger relational-memory result.
+
+## Secondary residual — low-rank latent attacker
+
+After or alongside generality, fit low-rank endpoint embeddings to the 15-entry pair matrix with **held-out pair scoring and degrees-of-freedom accounting**.
+
+Strong null family:
+
+```text
+rank-1 symmetric pair matrix
+rank-2 symmetric / indefinite latent embedding
+small nonlinear endpoint embedding with frozen capacity
+```
+
+Do not fit and score the same pair entries. With only 15 off-diagonal observations and six endpoints, rank-2 models are close to saturated; an in-sample fit proves almost nothing.
 
 ## Hard stop lines
 
@@ -194,8 +266,9 @@ If a six-scalar endpoint model reproduces all trained signs/effects, demote the 
 - slow global mixing insufficient;
 - Gate 5 alignment does not guarantee nonlinear sign on every graph;
 - Gate 6 has no efficiency advantage over explicit tables;
+- Gate 7 kills scalar endpoint reductions only, not low-rank/nonlinear endpoint codes;
 - no QM/phase/ferroic/growth/visual-world mechanism until a specific residual requires it.
 
-## QM / Feigenbaum
+## QM / Feigenbaum / instanton
 
-Still parked. No complex phase mechanism and no emergent fractal branching result exist in Sunday yet. Either needs its own matched attacker and receipt before entering the mechanism story.
+Still parked. The instanton-side experiment found useful negative controls, but Sunday currently has no need for a complex phase mechanism, tunneling story, or emergent fractal branching claim. Any such ingredient must answer a demonstrated Sunday residual and bring its own matched attacker and receipt.
