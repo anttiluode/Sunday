@@ -1,0 +1,50 @@
+{
+  "gate": "Gate 9 writable-subspace tomography",
+  "gate_pass": true,
+  "seed_start": 440000,
+  "seed_count": 4,
+  "design": {
+    "code_count": 16,
+    "registered_input_rank": 7,
+    "minimum_loo_training_rank": 7
+  },
+  "metrics": {
+    "mean_full_loo_nmse": 0.003138125409274978,
+    "mean_full_loo_cosine": 0.9965311410955099,
+    "mean_scalar_loo_nmse": 0.8074185519423358,
+    "mean_diagonal_loo_nmse": 0.5572274848951643,
+    "full_to_scalar_nmse_ratio": 0.0038866154384561338,
+    "full_to_diagonal_nmse_ratio": 0.005631677356807658,
+    "mean_top3_energy_fraction": 0.977688369931616,
+    "mean_rank3_loo_nmse": 0.03729754692661718,
+    "mean_rank3_loo_cosine": 0.9549019313627923,
+    "mean_pairwise_minimum_top3_input_principal_cosine": 0.9025400216645281,
+    "max_mass_budget_error": 5.684341886080802e-14,
+    "all_finite": true
+  },
+  "thresholds": {
+    "full_nmse_max": 0.02,
+    "full_cosine_min": 0.98,
+    "full_to_scalar_max": 0.1,
+    "full_to_diagonal_max": 0.1,
+    "top3_energy_min": 0.9,
+    "rank3_nmse_max": 0.1,
+    "rank3_cosine_min": 0.9,
+    "input_mode_min_cosine_min": 0.75,
+    "mass_error_max": 1e-10
+  },
+  "per_seed": [
+    {"seed":440000,"full_loo_nmse":0.0025425787658456597,"full_loo_cosine":0.9977087670199468,"scalar_loo_nmse":0.7980315732640324,"diagonal_loo_nmse":0.5269614507974518,"top3_energy_fraction":0.9659155087984769,"rank3_loo_nmse":0.055629143233447184,"rank3_loo_cosine":0.9432157142135708},
+    {"seed":440001,"full_loo_nmse":0.005197184582524986,"full_loo_cosine":0.9970654440185451,"scalar_loo_nmse":0.854196359420493,"diagonal_loo_nmse":0.583917605230295,"top3_energy_fraction":0.9840618943241203,"rank3_loo_nmse":0.02751821402579932,"rank3_loo_cosine":0.9664182170481294},
+    {"seed":440002,"full_loo_nmse":0.002314886531030592,"full_loo_cosine":0.9930094937180651,"scalar_loo_nmse":0.8109688096137739,"diagonal_loo_nmse":0.6193880561526041,"top3_energy_fraction":0.9723508733024193,"rank3_loo_nmse":0.04646216476440171,"rank3_loo_cosine":0.9361526731787063},
+    {"seed":440003,"full_loo_nmse":0.0024978517576986735,"full_loo_cosine":0.9983408596254822,"scalar_loo_nmse":0.7664774654710441,"diagonal_loo_nmse":0.49864282740030624,"top3_energy_fraction":0.9884252033014477,"rank3_loo_nmse":0.019580665682820502,"rank3_loo_cosine":0.9738211210107629}
+  ],
+  "pairwise_top3_input_principal_cosines": [
+    {"seeds":[440000,440001],"cosines":[0.98675781,0.98458364,0.89624280]},
+    {"seeds":[440000,440002],"cosines":[0.99718587,0.98025869,0.96946969]},
+    {"seeds":[440000,440003],"cosines":[0.99038670,0.97247226,0.95263730]},
+    {"seeds":[440001,440002],"cosines":[0.98416197,0.94111277,0.87671279]},
+    {"seeds":[440001,440003],"cosines":[0.99730503,0.97964676,0.78360922]},
+    {"seeds":[440002,440003],"cosines":[0.99966929,0.98085825,0.93656834]}
+  ]
+}
