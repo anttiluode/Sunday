@@ -1,0 +1,61 @@
+{
+  "gate": "Gate 8 independent relation codes",
+  "gate_pass": false,
+  "seed_start": 420000,
+  "seed_count": 6,
+  "registered_code_rank": 4,
+  "metrics": {
+    "C0": {
+      "mean_expected_sign_fraction": 1.0,
+      "mean_own_signed_contrast": 0.002182175282062174,
+      "mean_trained_unused_ratio": 9.487291668126062,
+      "mean_specificity_ratio": 10.265666444539228,
+      "self_top_fraction": 1.0,
+      "mean_shuffle_ratio": 0.08150
+    },
+    "C1": {
+      "mean_expected_sign_fraction": 0.9166666666666666,
+      "mean_own_signed_contrast": 0.001004440569213813,
+      "mean_trained_unused_ratio": 1.088563875136028,
+      "mean_specificity_ratio": 1.5058926176202274,
+      "self_top_fraction": 1.0,
+      "mean_shuffle_ratio": 0.1231
+    },
+    "C2": {
+      "mean_expected_sign_fraction": 0.7777777777777778,
+      "mean_own_signed_contrast": 0.002188232822638632,
+      "mean_trained_unused_ratio": 4.169335206967861,
+      "mean_specificity_ratio": 2.9990979635084343,
+      "self_top_fraction": 1.0,
+      "mean_shuffle_ratio": 0.1293
+    },
+    "C3": {
+      "mean_expected_sign_fraction": 0.8333333333333334,
+      "mean_own_signed_contrast": 0.00035041616047612006,
+      "mean_trained_unused_ratio": 0.30526304528105225,
+      "mean_specificity_ratio": 0.6106420004623808,
+      "self_top_fraction": 0.16666666666666666,
+      "mean_shuffle_ratio": 0.09533
+    },
+    "pooled_shuffle_ratio": 0.10527211793421097,
+    "max_mass_budget_error": 5.684341886080802e-14
+  },
+  "thresholds": {
+    "mean_sign_fraction_min": 0.80,
+    "mean_own_contrast_min": 0.00050,
+    "mean_trained_unused_ratio_min": 2.0,
+    "mean_specificity_ratio_min": 1.5,
+    "self_top_fraction_min": 0.75,
+    "pooled_shuffle_ratio_max": 0.40,
+    "mass_error_max": 1e-10
+  },
+  "failed_checks": [
+    "C1 trained/unused ratio",
+    "C2 trained-edge sign fraction",
+    "C3 own contrast",
+    "C3 trained/unused ratio",
+    "C3 specificity",
+    "C3 self-top fraction",
+    "all_codes_robust"
+  ]
+}
