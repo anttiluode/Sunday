@@ -1,0 +1,45 @@
+{
+  "gate": "Gate 5 boundary-condition alignment",
+  "gate_pass": true,
+  "seed_start": 360000,
+  "seed_count": 8,
+  "metrics": {
+    "mean_aligned_interaction": 0.0023786110915050246,
+    "mean_cross_interaction": 0.0005480879900766405,
+    "mean_alignment_ratio": 4.339834359757486,
+    "fraction_aligned_over_cross_mean": 0.875,
+    "fraction_aligned_over_both_crosses": 0.875,
+    "mean_aligned_overlap": 0.0348712030864613,
+    "mean_cross_overlap": 0.01574942663909539,
+    "mean_overlap_alignment_ratio": 2.2141252431310234,
+    "min_gap_ratio": 0.8647688263656271,
+    "max_gap_ratio": 1.1118132324162013,
+    "min_long_edge_fraction": 0.8662646328485278,
+    "max_clustering_ratio": 0.3535964561053362,
+    "max_strength_rel_error": 9.84751481778727e-11,
+    "all_connected": true,
+    "all_degree_exact": true,
+    "all_finite": true
+  },
+  "per_seed": [
+    {"seed":360000,"aligned":0.0043237819511121765,"cross_mean":0.0006103832841020647,"gain":7.083716189038327,"aligned_overlap":0.040809634865394295,"cross_overlap":0.012820713975114972},
+    {"seed":360001,"aligned":0.003149193530798025,"cross_mean":0.0006353339119074232,"gain":4.9567534044316925,"aligned_overlap":0.03512297663454905,"cross_overlap":0.022452191712941716},
+    {"seed":360002,"aligned":-0.0033146756622847605,"cross_mean":0.0006533806627186376,"gain":-5.073115645162802,"aligned_overlap":0.039453367636598013,"cross_overlap":0.019183270553271736},
+    {"seed":360003,"aligned":0.00006474225778738737,"cross_mean":0.0000011916110675366006,"gain":54.331702307220134,"aligned_overlap":-1.1102230246251565e-16,"cross_overlap":8.326672684688674e-17},
+    {"seed":360004,"aligned":0.0048927439811956115,"cross_mean":0.00047309889176691376,"gain":10.341905395132837,"aligned_overlap":0.03759524072624487,"cross_overlap":0.013623420340614478},
+    {"seed":360005,"aligned":0.004100648568367339,"cross_mean":0.000498098201555401,"gain":8.232610669065512,"aligned_overlap":0.04792704645575985,"cross_overlap":0.01490648722333765},
+    {"seed":360006,"aligned":0.0028741493531122264,"cross_mean":0.0008402099296841722,"gain":3.4207514712336176,"aligned_overlap":0.04084939326962911,"cross_overlap":0.025259797571302867},
+    {"seed":360007,"aligned":0.0029383047519521924,"cross_mean":0.0006730074278109754,"gain":4.3659321287275015,"aligned_overlap":0.03721196510351532,"cross_overlap":0.01774953173617963}
+  ],
+  "thresholds": {
+    "mean_aligned_interaction_min": 0.0015,
+    "aligned_over_cross_fraction_min": 0.75,
+    "aligned_over_both_fraction_min": 0.75,
+    "mean_alignment_ratio_min": 1.50,
+    "strength_rel_error_max": 1e-8,
+    "gap_ratio_min": 0.60,
+    "gap_ratio_max": 1.25,
+    "long_edge_fraction_min": 0.75,
+    "clustering_ratio_max": 0.45
+  }
+}
