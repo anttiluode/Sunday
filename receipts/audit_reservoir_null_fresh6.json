@@ -1,0 +1,23 @@
+{
+  "audit": "fixed dormant reservoir plus trained linear readout",
+  "seed_start": 520000,
+  "seed_count": 6,
+  "metrics": {
+    "registered_rank": 7,
+    "dormant_feature_rank_all_seeds": 7,
+    "minimum_loo_feature_rank": 7,
+    "mean_loo_q_reconstruction_nmse": 5.6494025524840445e-30,
+    "mean_loo_q_reconstruction_cosine": 1.0,
+    "minimum_restricted_smallest_to_largest_singular_ratio": 0.08621744472314927,
+    "mean_restricted_top3_write_energy_fraction": 0.9080333611535618,
+    "mutable_mass_scalars": 249
+  },
+  "per_seed": [
+    {"seed":520000,"feature_rank":7,"minimum_loo_feature_rank":7,"loo_q_reconstruction_nmse":7.45633483756077e-30,"loo_q_reconstruction_cosine":1.0,"restricted_smallest_to_largest_singular_ratio":0.09919241589798396,"restricted_top3_write_energy_fraction":0.8736032391455133},
+    {"seed":520001,"feature_rank":7,"minimum_loo_feature_rank":7,"loo_q_reconstruction_nmse":1.9567908164809645e-30,"loo_q_reconstruction_cosine":1.0,"restricted_smallest_to_largest_singular_ratio":0.11137392582344305,"restricted_top3_write_energy_fraction":0.9253701949976921},
+    {"seed":520002,"feature_rank":7,"minimum_loo_feature_rank":7,"loo_q_reconstruction_nmse":6.588151583249624e-30,"loo_q_reconstruction_cosine":1.0,"restricted_smallest_to_largest_singular_ratio":0.08621744472314927,"restricted_top3_write_energy_fraction":0.9470664177935552},
+    {"seed":520003,"feature_rank":7,"minimum_loo_feature_rank":7,"loo_q_reconstruction_nmse":5.3969232049719845e-30,"loo_q_reconstruction_cosine":1.0,"restricted_smallest_to_largest_singular_ratio":0.10639026411884106,"restricted_top3_write_energy_fraction":0.8976184821191138},
+    {"seed":520004,"feature_rank":7,"minimum_loo_feature_rank":7,"loo_q_reconstruction_nmse":6.330589525379079e-30,"loo_q_reconstruction_cosine":1.0,"restricted_smallest_to_largest_singular_ratio":0.10779229166909769,"restricted_top3_write_energy_fraction":0.9093031154434764},
+    {"seed":520005,"feature_rank":7,"minimum_loo_feature_rank":7,"loo_q_reconstruction_nmse":6.167625347261843e-30,"loo_q_reconstruction_cosine":1.0,"restricted_smallest_to_largest_singular_ratio":0.10534712064042091,"restricted_top3_write_energy_fraction":0.8952387174220191}
+  ]
+}
