@@ -1,0 +1,37 @@
+{
+  "gate": "Gate 3 — topology/locality dial",
+  "status": "FAIL",
+  "failure_reason": "Preregistered Spearman(clustering, |interaction|) was 0.5750, below required 0.60.",
+  "seed_start": 320000,
+  "seed_count": 6,
+  "points": 36,
+  "metrics": {
+    "geo_mean_overlap": 0.11496808824176957,
+    "geo_mean_interaction": 0.008353632442639286,
+    "half_clustering_ratio": 0.20863680928848644,
+    "half_abs_interaction_ratio": 0.19204368704076663,
+    "saturated_abs_interaction_ratio": 0.20217837259856763,
+    "spearman_clustering_abs_interaction": 0.5750321750321751,
+    "spearman_gap_abs_interaction": -0.6787644787644789,
+    "spearman_clustering_abs_overlap": 0.6190476190476191,
+    "spearman_gap_abs_overlap": -0.7806949806949809,
+    "max_strength_rel_error": 9.869369581739576e-11,
+    "all_connected": true,
+    "all_degree_exact": true
+  },
+  "level_means": {
+    "0.0": {"clustering": 0.5865354517027681, "mean_path": 2.992013888888889, "gap": 0.07161367755164492, "long_edge_fraction": 0.0, "mean_overlap": 0.11496808824176957, "mean_interaction": 0.008353632442639286},
+    "0.1": {"clustering": 0.3494399043569469, "mean_path": 2.2714562908496734, "gap": 0.2360878093535945, "long_edge_fraction": 0.17896618260608785, "mean_overlap": 0.07022108439562685, "mean_interaction": 0.0030787631726522813},
+    "0.5": {"clustering": 0.12237288517784668, "mean_path": 2.0875306372549023, "gap": 0.5661447870432147, "long_edge_fraction": 0.5940191268359972, "mean_overlap": 0.022627783817359675, "mean_interaction": 0.001604262374467814},
+    "1.0": {"clustering": 0.10500606827331106, "mean_path": 2.0682700163398695, "gap": 0.6065942241106017, "long_edge_fraction": 0.7787944648587023, "mean_overlap": 0.020324128416659915, "mean_interaction": 0.0015613616884414619},
+    "2.0": {"clustering": 0.10515323247482172, "mean_path": 2.0630616830065356, "gap": 0.6131925648662969, "long_edge_fraction": 0.8646258830788897, "mean_overlap": 0.021045198066512383, "mean_interaction": 0.0017158127000189316},
+    "5.0": {"clustering": 0.1052722939393166, "mean_path": 2.059073733660131, "gap": 0.6177480873886815, "long_edge_fraction": 0.8802755953046217, "mean_overlap": 0.015280286333262005, "mean_interaction": 0.0016620349250598852}
+  },
+  "posthoc_hypotheses_only": {
+    "spearman_mean_path_abs_interaction": 0.7204633204633206,
+    "spearman_long_edge_abs_interaction": -0.599421069280364,
+    "spearman_transitivity_abs_interaction": 0.5685971685971686,
+    "spearman_mean_path_abs_overlap": 0.8216216216216217,
+    "spearman_long_edge_abs_overlap": -0.6990021033850424
+  }
+}
