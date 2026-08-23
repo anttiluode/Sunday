@@ -2,295 +2,210 @@
 
 Date: 2026-08-23
 
-## Message to the next Sol instance
+## Restart rule
 
-Do not restart from the motivating metaphor. Restart from the receipts.
+Do not restart from the dendrite/3-D metaphor. Restart from the receipts and dead claims below.
 
-Sunday asks:
+Sunday's live question is now:
 
-> Can repeated signal write persistent transfer structure into a fixed amount of computational material, and can that structure become a calculating primitive rather than merely a route?
+> **What graph structure lets local signal-driven mass plasticity write strong relations between inputs, and can those relations compose into useful computation?**
 
-The project has now separated three layers:
+## Lineage
 
 ```text
-Gate 0  signal can write spatial routing              PASS
-        but frozen dynamics are exactly linear        ATTACKER WINS
+Gate 0  signal-carved microarbor             PASS as routing memory
+        exact superposition attacker         KILLS calculation claim
 
-Gate 1  coactivation can write a pair relation        PASS
-        local nonlinearity reads it as interaction
+Gate 1  matched coactivation histories       PASS
+        pair relation + distributed nonlinear readout
 
-Gate 2  is that relation inherently 3-D?              NO
-        does Euclidean locality amplify it?            YES in current instrument
+Gate 2  abstract graph attacker v0            INVALID numerical overflow
+Gate 2  stable graph attacker v1              PASS
+        3-D necessity claim                   KILLED
+        locality amplification                SURVIVES
+
+Gate 3  topology/locality dial                FAIL prereg
+        clustering as leading descriptor      NOT established
+        mixing/corridor hypothesis            sharpened post-hoc only
 ```
 
-## Branch lineage
+Accepted/default branch should contain all of the above before the next gate.
+
+## Gate 0 receipt
+
+Fixed 256-element substrate, fixed total mass, no birth/deletion, no learned free-form edges.
+
+Signal history redistributes slow node mass and changes later transfer. Correct-route gains were ~1.4x over uniform and ~1.7x over mass-shuffled controls.
+
+But frozen dynamics obey superposition to floating precision (`~1e-17` whole-state error). Therefore Gate 0 is **adaptive routing / structural memory, not a calculating dendrite**.
+
+See:
 
 ```text
-sol/gate0-signal-carved-microarbor
-sol/gate1-local-nonlinear-overlap
-sol/gate2-abstract-graph-attacker          INVALID v0 nonlinear comparison
-sol/gate2-v1-stable-graph-attacker         CURRENT ACCEPTED GATE 2
-```
-
-`main` should be fast-forwarded to the accepted Gate-2 v1 lineage before beginning the next gate.
-
----
-
-## Gate 0 — spatial transfer memory, not calculation
-
-Fixed resources:
-
-```text
-256 elements
-same xyz positions
-same geometry graph
-same initial uniform mass
-total mass budget = 256
-no birth/deletion
-no learned free-form edges
-no pixel feedback
-```
-
-Representative accepted receipt:
-
-```text
-A selectivity                 1.3286x
-B selectivity                 1.5472x
-A gain over uniform           1.3900x
-B gain over uniform           1.4548x
-A gain over mass shuffle      1.7370x
-B gain over mass shuffle      1.7506x
-observer on/off trace         exactly identical
-```
-
-Safe statement:
-
-> Signal history can become persistent spatial transfer geometry under a fixed material budget.
-
-### Gate-0 linearity attacker
-
-The attacker wins exactly:
-
-```text
-R(A+B) - [R(A)+R(B)]  ~1e-17 whole-state
-soma error             ~1e-19
-R(2A)-2R(A)            0 in tested run
-```
-
-Do not call Gate 0 a dendritic calculating primitive. It is adaptive routing / structural memory.
-
-Files:
-
-```text
-sunday/microarbor.py
-experiments/gate0_signal_carved_microarbor.py
-experiments/gate0_linearity_attacker.py
 docs/GATE0_SIGNAL_CARVED_MICROARBOR.md
 docs/GATE0_LINEARITY_ATTACKER.md
 ```
 
----
+## Gate 1 receipt
 
-## Gate 1 — a relation between inputs can be written into the medium
-
-Matched histories:
+Matched programs:
 
 ```text
 H_AB: [A+B], [C], [D]
 H_CD: [C+D], [A], [B]
 ```
 
-Every terminal occurs exactly once per cycle in both histories. Only coactivation grouping changes.
+Each terminal occurs exactly once per cycle in both histories. Only coactivation grouping changes.
 
-Surprise: under the current current-reinforcement + fixed-budget rule, the coactive pair becomes **less internally route-overlapping**, not more. Do not retrofit a Hebbian story.
-
-Held-out confirmation `240000..240019`:
+Held-out `240000..240019`:
 
 ```text
-AB route-separation positive              20/20
-CD route-separation positive              20/20
-AB nonlinear-interaction separation       20/20
-CD nonlinear-interaction separation       20/20
-mean route-overlap separation             0.116056
-mean nonlinear interaction separation     0.008948
-mass-shuffle signed ratio                 ~0.04
+route-separation sign             20/20 both pairs
+nonlinear-interaction sign        20/20 both pairs
+mean route separation             0.116056
+mean nonlinear separation         0.008948
+mass-shuffle signed ratio         ~0.04
 ```
 
-A soma-only nonlinearity produces almost no program effect. The distributed/soma ratio is ~1036x only because the soma-only denominator is microscopic; always state the absolute distributed effect (~0.009).
+Coactivity currently causes **route separation**, not Hebbian-style route merging. Do not rewrite that story.
 
-A fresh operating sweep over 5 cubic strengths x 3 amplitudes x 6 clouds x 2 pairs gave the expected sign **180/180**. So the sign is not a one-operating-point accident.
+A 15-point operating sweep on six fresh clouds gave the expected interaction sign 180/180.
 
 Safe statement:
 
-> Experience can write a pair relation into transfer geometry without explicit pair-specific learned weights. A fixed local nonlinearity later converts route overlap into a pairwise interaction.
+> Experience can write a pair relation into transfer geometry without explicit pair weights; a fixed distributed local nonlinearity can read that relation as a pairwise interaction.
 
-Files:
+See:
 
 ```text
-sunday/nonlinear_overlap.py
-experiments/gate1_local_nonlinear_overlap.py
-experiments/gate1_robustness_sweep.py
 docs/GATE1_LOCAL_NONLINEAR_OVERLAP.md
 docs/GATE1_ROBUSTNESS_SWEEP.md
-receipts/gate1_confirm20.json
-receipts/gate1_robustness_confirm6.json
 ```
 
----
+## Gate 2 receipt — 3-D demoted
 
-## Gate 2 v0 — INVALID, preserve the failure
+Gate-2 v0 is invalid because the original explicit-Euler cubic probe overflowed on some rewired graphs. Preserve `docs/GATE2_V0_INVALID.md`; NaNs were not counted as geometry winning.
 
-The first abstract-graph confirmation used Gate 1's original explicit-Euler cubic probe. Some degree+strength-matched rewired graphs at held-out seeds `280005` and `280006` overflowed and produced NaNs.
-
-Those NaNs were **not counted as geometry winning**.
-
-The range was abandoned and recorded in:
+Stable v1 fresh range `300000..300011`:
 
 ```text
-docs/GATE2_V0_INVALID.md
+GEO route separation                 0.121534
+REWIRE |route separation|            0.018915
+ratio                                6.425x
+
+GEO nonlinear separation             0.008661
+REWIRE |nonlinear separation|        0.001860
+ratio                                4.657x
+
+same graph + coordinates erased      exactly identical
+rewires exact degree                 yes
+rewires connected                    yes
+initial node strength error          < 1e-10
+rewired long-edge fraction           ~0.88
 ```
 
-Do not reuse `280000..280011` as fresh confirmation.
+The rewire arm still had the expected pair-relation sign 12/12 for every measure.
 
----
+Therefore:
 
-## Gate 2 v1 — PASS, but 3-D is demoted
+> **The current primitive is graph-generic. 3-D coordinates are not execution-time necessities. Euclidean locality is an inductive/topological constraint that strongly amplifies the effect.**
 
-Fresh range:
-
-```text
-300000..300011
-```
-
-The nonlinear response was integrated with 8 equal response-only substeps in both arms. Learning was unchanged.
-
-### Arms
+See:
 
 ```text
-GEO
-  xyz -> radial kernel/cutoff -> base graph
-
-GRAPH-SAME
-  exact same base graph
-  coordinates replaced with zeros
-
-REWIRE-DS
-  repeated double-edge swaps
-  exact unweighted degree per node
-  connected
-  initial weighted degree/node strength matched to <1e-10
-  ~88% of edges longer than original Euclidean cutoff
-```
-
-### Receipt
-
-```text
-GEO mean route separation                 0.121534
-REWIRE mean |route separation|            0.018915
-GEO / REWIRE                              6.425x
-
-GEO mean nonlinear interaction separation 0.008661
-REWIRE mean |interaction separation|      0.001860
-GEO / REWIRE                              4.657x
-
-all expected GEO signs                    12/12 for all four measures
-all expected REWIRE signs                 12/12 for all four measures
-GRAPH-SAME max difference                 0.0
-all rewires exact degree                  yes
-all rewires connected                     yes
-max initial strength relative error       9.82e-11
-minimum long-edge fraction                0.872
-all nonlinear values finite               yes
-```
-
-### Decisive interpretation
-
-The abstract rewire is **not a null**. It preserves the same qualitative relational phenomenon on every confirmation seed.
-
-Therefore kill this claim:
-
-> 3-D geometry itself is the calculating primitive.
-
-Current equations reduce to:
-
-```text
-xyz -> base graph -> all later learning and dynamics
-```
-
-Once `base` exists, coordinates are dead metadata. GRAPH-SAME proves this exactly.
-
-What survives:
-
-> **The pair-relation mechanism is graph-generic in this instrument. Euclidean locality is a strong inductive/topological constraint that amplifies and regularizes it.**
-
-This is still interesting, but it changes the target from "3-D matter computes" to "what topology makes this local relational computation strong?"
-
-Gate 2 does not identify that topology because REWIRE-DS does not preserve graph spectrum, clustering, shortest-path distribution, community structure, motifs, or exact post-scaling edge-weight multiset.
-
-Files:
-
-```text
-sunday/graph_attacker.py
-experiments/gate2_v1_stable_graph_attacker.py
-docs/GATE2_GRAPH_ATTACKER_PREREG.md
-docs/GATE2_V0_INVALID.md
-docs/GATE2_V1_STABLE_PREREG.md
 docs/GATE2_V1_RESULT.md
 receipts/gate2_v1_confirm12.json
-tests/test_gate2.py
 ```
 
----
+## Gate 3 receipt — FAIL, useful residual
 
-## Current residual — follow this, not the old metaphor
+A nested degree-preserving locality dial used similar-weight edge swaps and rematched every node's strength. Fresh range `320000..320005`, six topology levels each.
 
-The next question is:
-
-> **Which topology induced by locality amplifies the pair relation?**
-
-The clean next instrument is a **locality dial**:
+Level means:
 
 ```text
-same geometric graph
-  -> progressively more degree-preserving edge swaps
-  -> re-match initial node strength
-  -> retrain identical histories
-  -> measure pair relation + graph statistics
+swaps/E  clustering  path   gap    nonlinear separation
+0.0      0.5865      2.992  .0716  0.008354
+0.1      0.3494      2.271  .2361  0.003079
+0.5      0.1224      2.088  .5661  0.001604
+1.0      0.1050      2.068  .6066  0.001561
+2.0      0.1052      2.063  .6132  0.001716
+5.0      0.1053      2.059  .6177  0.001662
 ```
 
-Measure at least:
+Strong collapse survived:
 
 ```text
-fraction of long/nonlocal edges
-clustering / transitivity
-mean shortest path if connected
-Laplacian / normalized spectral gap
-route separation
-nonlinear interaction separation
+0.5E clustering / GEO                 0.209
+0.5E |interaction| / GEO             0.192
+saturated |interaction| / GEO        0.202
 ```
 
-Do not simply correlate one exploratory run and announce mechanism. Use the dial to identify candidates, then construct a targeted attacker that matches the candidate statistic while breaking others.
+But preregistered:
 
-A small composition gate may run after or alongside the topology autopsy:
+```text
+rho(clustering, |interaction|) >= .60
+```
 
-> Can one fixed mass budget store several pair relations at once and expose them in the frozen pairwise interaction matrix without explicit pair weights?
+observed only:
 
-That is closer to the original dendrite/calculating-primitive question.
+```text
++0.575
+```
 
----
+so **Gate 3 FAILS**.
 
-## Things the next instance must not silently change
+The preregistered spectral-gap anticorrelation passed (`rho=-0.679`). Post-hoc only, mean path length tracked |interaction| at `rho=+0.720` and route separation even more strongly.
 
-- Keep total structural mass fixed unless a new gate explicitly tests growth.
-- No learned edge weights independent of geometry/topology while claiming a morphology effect.
-- Rendering is read-only; never feed pixels back into state.
-- Do not hand-design a tree.
-- Gate 0 is linear routing; that interpretation is dead.
-- Gate 1 is not established Hebbian binding; coactivity currently causes route separation.
-- 3-D coordinates are not execution-time necessities in the current equations.
-- Do not claim the 6.4x / 4.7x ratios prove 3-D superiority generally; they compare GEO to one degree+strength-matched rewire family.
-- Do not add faces, VKITTI, CLIP, oscillations, ferroic hysteresis, growth, or autonomous recurrence until a specific residual calls for them.
+Do not call clustering causal.
 
-## Feigenbaum / branching note
+See:
 
-Still parked. No gate has produced evidence for fractal branching, bifurcation cascades, or self-similar morphology. If such structure later emerges without being planted, quantify it then.
+```text
+docs/GATE3_RESULT.md
+receipts/gate3_topology_dial_confirm6.json
+```
+
+## Current residual
+
+The live hypothesis is broader than clustering:
+
+```text
+local / corridor-like / poorly mixed topology
+    -> signals retain distinguishable route structure
+    -> fixed-budget node-mass plasticity can sculpt relations strongly
+
+expander-like / rapidly mixed topology
+    -> routes diffuse together
+    -> only the weak generic-graph relation survives
+```
+
+This is still only a hypothesis.
+
+### Next targeted attacker
+
+Construct a **highly non-geometric graph with low spectral gap / slow mixing** by imposing random communities unrelated to xyz while preserving exact node degree and rematching node strength.
+
+Consumed exploratory seeds already show that restoring low gap alone did *not* restore the GEO nonlinear effect (rough modular/GEO interaction ratios: -0.01, 0.08, 0.28). This is calibration only.
+
+The next fresh gate should test:
+
+> Is slow mixing sufficient, or is the important object the alignment of local corridors with where signals enter and leave?
+
+If random low-gap modular graphs remain weak, the useful structure is more specific than any single global mixing statistic.
+
+## Hard stop lines
+
+- total structural mass stays fixed unless a gate explicitly tests growth;
+- no learned pair-specific edge weights while claiming morphology carries the relation;
+- rendering stays read-only;
+- no hand-designed dendritic tree;
+- Gate 0 is linear routing;
+- Gate 1 is not established Hebbian binding;
+- 3-D coordinates are not the current computational primitive;
+- Gate 3 did not establish clustering as causal;
+- no faces, VKITTI, CLIP, oscillations, ferroic memory, growth or autonomous visual recurrence until a specific residual requires them.
+
+## Feigenbaum note
+
+Still parked. No evidence yet for fractal branching, bifurcation cascades or self-similar morphology. If such structure emerges without being planted, measure it then.
