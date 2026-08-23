@@ -6,8 +6,12 @@ Sunday keeps failed mechanisms visible so later work cannot quietly resurrect th
 |---|---|---|---|---|
 | 2026-08-23 | Pixels/rendered frames as recurrent material state | **Killed for Sunday** | Repeated lossy reconstruction is a known route to accumulated blur/fire and confounds substrate dynamics with display error. | Rendering remains a read-only observer. |
 | 2026-08-23 | Literal element birth as the first explanation of dendritic growth | **Deferred / demoted** | A fixed dormant-capacity system is the stronger initial control; otherwise increased capacity can masquerade as a growth advantage. | Later topology change only if fixed-capacity morphology hits a demonstrated limit. |
-| 2026-08-23 | Assume tree/fractal morphology in Gate 0 | **Deferred** | It would install the desired visual answer before testing whether 3-D transfer geometry matters. | Measure emergent branching/self-similarity later if it appears. |
+| 2026-08-23 | Assume tree/fractal morphology in Gate 0 | **Deferred** | It would install the desired visual answer before testing whether transfer geometry matters. | Measure emergent branching/self-similarity later if it appears. |
 | 2026-08-23 | Learned WorldSplat decoder in Gate 0 | **Deferred** | Decoder quality, 3-D identifiability and recurrent material dynamics would change at once. | WorldSplat primitives and renderer ideas survive; learned scene priors belong to later gates. |
+| 2026-08-23 | Gate-0 morphology is already a calculating dendrite | **Killed** | Frozen Gate-0 dynamics obey superposition to floating-point precision. | Adaptive routing / structural memory survives. Distributed local nonlinearity is tested separately. |
+| 2026-08-23 | 3-D coordinates are the current calculating primitive | **Killed** | Gate 2 GRAPH-SAME erases coordinates after graph construction with exactly identical learning and execution; non-geometric rewires retain the qualitative pair relation. | Euclidean locality survives as a strong inductive/topological constraint. |
+| 2026-08-23 | Clustering alone explains locality amplification | **Not established** | Gate 3 preregistered clustering/interaction correlation missed its threshold (`rho=+0.575 < +0.60`). | Local corridor / mixing / alignment hypotheses remain open. |
+| 2026-08-23 | Low spectral gap / slow global mixing is sufficient for the strong pair relation | **Killed** | Gate 4 matched random non-geometric modular graphs to GEO spectral gap (mean ratio 1.006) yet recovered only 0.223 of the nonlinear relation on average; 15/15 stayed below 0.5 recovery. | Signal-aligned corridor/bottleneck placement remains open. |
 
 ## Rule
 
