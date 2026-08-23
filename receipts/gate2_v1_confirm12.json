@@ -1,0 +1,41 @@
+{
+  "gate": "Gate 2 v1 — stable abstract graph attacker",
+  "status": "PASS",
+  "seed_start": 300000,
+  "seed_count": 12,
+  "metrics": {
+    "geo_AB_overlap_positive_fraction": 1.0,
+    "geo_CD_overlap_positive_fraction": 1.0,
+    "geo_AB_interaction_positive_fraction": 1.0,
+    "geo_CD_interaction_positive_fraction": 1.0,
+    "geo_mean_overlap_separation": 0.12153415687970172,
+    "geo_mean_interaction_separation": 0.00866050811432124,
+    "rewire_mean_abs_overlap_separation": 0.01891492081017941,
+    "rewire_mean_abs_interaction_separation": 0.001859625972601594,
+    "geo_to_rewire_overlap_ratio": 6.425306143195476,
+    "geo_to_rewire_interaction_ratio": 4.657123659229869,
+    "rewire_AB_overlap_positive_fraction": 1.0,
+    "rewire_CD_overlap_positive_fraction": 1.0,
+    "rewire_AB_interaction_positive_fraction": 1.0,
+    "rewire_CD_interaction_positive_fraction": 1.0,
+    "max_graph_same_difference": 0.0,
+    "all_degree_sequences_exact": true,
+    "all_rewires_connected": true,
+    "all_values_finite": true,
+    "max_strength_relative_error": 9.818313272073303e-11,
+    "min_long_edge_fraction": 0.8719832109129066,
+    "mean_long_edge_fraction": 0.8819685020381351,
+    "mean_edge_count": 2861.0
+  },
+  "thresholds": {
+    "geo_positive_fraction_min": 0.9,
+    "geo_mean_overlap_min": 0.04,
+    "geo_mean_interaction_min": 0.0015,
+    "graph_same_max_difference": 1e-12,
+    "rewire_strength_relative_error_max": 1e-8,
+    "rewire_long_edge_fraction_min": 0.5,
+    "geo_to_rewire_overlap_ratio_min": 3.0,
+    "geo_to_rewire_interaction_ratio_min": 2.0
+  },
+  "interpretation": "The exact graph is sufficient after construction. The learned pair relation also survives on degree/strength-matched non-geometric rewires, so it is not inherently 3-D. Euclidean locality amplifies the relation by about 6.4x in route separation and 4.7x in nonlinear interaction in this instrument."
+}
