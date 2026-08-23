@@ -4,247 +4,232 @@ Date: 2026-08-23
 
 ## Restart rule
 
-Do not restart from the dendrite/3-D/QM metaphor. Restart from the receipts and dead claims.
+Restart from receipts, not from the original 3-D/dendrite/QM metaphor.
 
-Sunday's live question is now:
+Sunday's current question:
 
-> **What topology lets local signal-driven mass plasticity write strong relations between inputs, and can those relations compose into useful computation without explicit pair weights?**
+> **Can a fixed material substrate store and compose relations between inputs through topology + local plasticity, without explicit pair-specific weights?**
 
-## Lineage
-
-```text
-Gate 0  signal-carved microarbor             PASS as routing memory
-        exact superposition attacker         KILLS calculation claim
-
-Gate 1  matched coactivation histories       PASS
-        pair relation + distributed nonlinear readout
-
-Gate 2  abstract graph attacker v0           INVALID numerical overflow
-Gate 2  stable graph attacker v1             PASS
-        3-D necessity claim                  KILLED
-        locality amplification               SURVIVES
-
-Gate 3  topology/locality dial               FAIL prereg
-        clustering explanation               NOT established
-        effect collapses leaving local regime SURVIVES
-
-Gate 4  low-gap non-geometric attacker       PASS
-        slow global mixing sufficient?       KILLED
-        signal/topology alignment residual   OPEN
-```
-
-## Gate 0 — route, not calculation
-
-Fixed 256-element substrate, fixed total structural mass, no birth/deletion, no free learned edges.
-
-Representative receipt:
+## Lineage in one screen
 
 ```text
-correct-route gain over uniform      ~1.4x
-correct-route gain over mass shuffle ~1.7x
+Gate 0  signal writes spatial transfer                  PASS
+        frozen dynamics exactly linear                  calculation claim KILLED
+
+Gate 1  matched coactivity writes a pair relation       PASS
+        distributed local nonlinearity reads relation
+
+Gate 2  coordinates erased after graph construction     EXACT TIE
+        non-geometric rewires retain weak relation       3-D necessity KILLED
+        Euclidean locality amplifies relation            SURVIVES
+
+Gate 3  progressive locality destruction                useful collapse
+        clustering prereg misses threshold               GATE FAIL
+
+Gate 4  random non-geometric low-gap modular graphs      PASS
+        slow global mixing restores strong relation?     NO — KILLED
+
+Gate 5  same graph, different input-role alignment       PASS
+        boundary/topology alignment matters              SURVIVES
 ```
 
-But frozen dynamics obey superposition to floating precision (`~1e-17` whole-state error). Gate 0 is adaptive routing / structural memory, **not** a calculating dendrite.
+## Gate 0
 
-## Gate 1 — experience writes a relation between inputs
+256 fixed elements, fixed total mass, no element birth, no free learned edges. Signal history redistributes node mass and changes later transfer. Correct route ~1.4x over uniform and ~1.7x over mass shuffle.
 
-Matched histories:
+But superposition holds to ~1e-17 whole-state error. Gate 0 is adaptive routing/structural memory, not a calculating dendrite.
+
+## Gate 1
+
+Matched programs:
 
 ```text
 H_AB: [A+B], [C], [D]
 H_CD: [C+D], [A], [B]
 ```
 
-Every terminal occurs once per cycle in both histories. Only coactivation grouping differs.
+Every terminal occurs once per cycle in both histories; only coactivity grouping changes.
 
-Held-out `240000..240019`:
+Fresh `240000..240019`:
 
 ```text
-route-separation sign             20/20 both pairs
-nonlinear-interaction sign        20/20 both pairs
+route sign                        20/20 both pairs
+nonlinear interaction sign        20/20 both pairs
 mean route separation             0.116056
 mean nonlinear separation         0.008948
 mass-shuffle signed ratio         ~0.04
 ```
 
-A 15-point nonlinear operating sweep on six fresh clouds gave the expected sign 180/180.
+Surprise: coactivity causes route **separation**, not Hebbian-style merging, under this fixed-budget current-reinforcement rule.
 
-Important surprise: coactivity causes **route separation** under the current fixed-budget current-reinforcement rule. Do not retrofit a Hebbian-merging story.
+A later 15-point nonlinear operating sweep gave expected sign 180/180.
+
+Safe statement: experience can write a pair relation into transfer geometry without explicit pair weights, and a fixed distributed local nonlinearity can read it as pairwise interaction.
+
+## Gate 2
+
+Stable abstract-graph attacker `300000..300011`:
+
+```text
+GEO route separation              0.121534
+REWIRE |route|                    0.018915   ratio 6.425x
+GEO nonlinear separation          0.008661
+REWIRE |nonlinear|                0.001860   ratio 4.657x
+same graph + xyz erased           exactly identical
+rewire degree                     exact
+node strength error               <1e-10
+nonlocal edges                    ~0.88
+```
+
+The rewired graph still retained the qualitative pair relation on all seeds.
+
+Therefore 3-D coordinates are not the execution-time primitive. Locality is a strong graph prior/constraint.
+
+Gate-2 v0 remains invalid due nonlinear integrator overflow on attacker graphs; NaNs were never counted as geometry winning.
+
+## Gate 3
+
+Nested degree-preserving locality dial `320000..320005`:
+
+```text
+swaps/E   clustering   path   gap     nonlinear
+0.0       .5865        2.992  .0716   .008354
+0.1       .3494        2.271  .2361   .003079
+0.5       .1224        2.088  .5661   .001604
+1.0+      ~.105        ~2.06  ~.61    ~.0016-.0017
+```
+
+The effect collapses to ~20% after leaving the local regime. But preregistered `rho(clustering, |interaction|) >= .60` observed only `+.575`; Gate 3 FAILS. Do not call clustering causal.
+
+## Gate 4
+
+Low-gap non-geometric attacker `340000..340004`, three random balanced partitions per cloud = 15 attackers.
+
+Random community bottlenecks were imposed on non-geometric graphs until spectral gap returned close to GEO while preserving degree and rematching node strength.
+
+```text
+GEO mean nonlinear interaction       0.007800
+MODULAR recovery mean                 0.223308
+MODULAR recovery median               0.209767
+MODULAR max recovery                  0.468354
+MODULAR <= .50 recovery               15/15
+mean gap ratio                        1.006
+minimum nonlocal-edge fraction        0.879
+max clustering/GEO ratio              0.340
+strength error                        <9.5e-11
+```
+
+Gate 4 PASS: low global mixing is not sufficient. Arbitrary bottlenecks in the wrong places do not restore the strong relation.
+
+See `docs/GATE4_RESULT.md` and `receipts/gate4_low_gap_confirm5.json`.
+
+## Gate 5 — boundary/topology alignment PASS
+
+This is the cleanest causal topology result so far.
+
+For each fresh seed `360000..360007`, build one valid non-geometric low-gap modular graph whose four physical terminals split 2+2 across its two communities. Freeze that graph.
+
+There are exactly three perfect pairings of the four physical input nodes. One pairing puts both semantic pairs within communities (`ALIGNED`); the other two put both semantic pairs across the community boundary (`CROSSED`).
+
+**The graph is identical between these arms.** Only which physical terminals are called A/B/C/D for the matched coactivity programs changes.
+
+Receipt:
+
+```text
+mean ALIGNED nonlinear relation       0.002379
+mean CROSSED relation                 0.000548
+ratio                                 4.340x
+ALIGNED > crossed mean                7/8
+ALIGNED > both crossed pairings       7/8
+
+mean ALIGNED route separation         0.034871
+mean CROSSED route separation         0.015749
+route ratio                           2.214x
+```
+
+All graph validity controls pass.
+
+Important scars:
+
+```text
+360002: route alignment strengthens, but nonlinear interaction reverses sign
+360003: almost silent graph; huge ratio is denominator-driven
+```
+
+Do not hide either.
 
 Safe statement:
 
-> Experience can write a pair relation into transfer geometry without explicit pair weights; a fixed distributed local nonlinearity can read that relation as pairwise interaction.
+> **The same fixed topology can support a substantially stronger learned pair relation when semantic coactivity boundary conditions align with its internal community/corridor layout.**
 
-## Gate 2 — 3-D demoted
-
-Stable v1 fresh `300000..300011`:
-
-```text
-GEO route separation                 0.121534
-REWIRE |route separation|            0.018915
-ratio                                6.425x
-
-GEO nonlinear separation             0.008661
-REWIRE |nonlinear separation|        0.001860
-ratio                                4.657x
-
-same graph + coordinates erased      exactly identical
-rewires exact degree                 yes
-rewires connected                    yes
-initial node strength error          < 1e-10
-rewired long-edge fraction           ~0.88
-```
-
-The rewire still had the expected qualitative relation 12/12.
-
-Therefore:
-
-> **The primitive is graph-generic in this instrument. 3-D coordinates are not execution-time necessities. Euclidean locality is an inductive/topological constraint that strongly amplifies the relation.**
-
-Gate-2 v0 remains explicitly invalid because some rewired nonlinear probes numerically overflowed. Do not count NaNs as geometry winning.
-
-## Gate 3 — locality dial FAILS prereg, leaves a regime transition
-
-Fresh `320000..320005`, nested degree-preserving similar-weight rewires with node strength rematched:
-
-```text
-swaps/E  clustering  path   gap    nonlinear separation
-0.0      0.5865      2.992  .0716  0.008354
-0.1      0.3494      2.271  .2361  0.003079
-0.5      0.1224      2.088  .5661  0.001604
-1.0      0.1050      2.068  .6066  0.001561
-2.0      0.1052      2.063  .6132  0.001716
-5.0      0.1053      2.059  .6177  0.001662
-```
-
-By 0.5E rewiring the nonlinear relation fell to ~19% of GEO and then remained on a small generic-graph floor.
-
-But preregistered `rho(clustering, |interaction|) >= .60` observed only `+0.575`, so Gate 3 is **FAIL**. Spectral-gap anticorrelation passed (`-0.679`); mean path length was stronger post-hoc (`+0.720`). None is causal evidence yet.
-
-## Gate 4 — slow mixing is not sufficient
-
-Fresh `340000..340004`, three independent random balanced partitions per cloud = 15 attackers.
-
-Construction:
-
-```text
-GEO radial graph
-  -> degree+strength-matched non-geometric expander
-  -> degree-preserving swaps turn cross-community edges into within-community edges
-  -> stop when normalized-Laplacian gap returns near GEO
-  -> rematch every node's initial strength
-  -> retrain the same histories
-```
-
-The random communities are unrelated to xyz and unrelated to the terminal/soma roles.
-
-Fresh receipt:
-
-```text
-GEO mean nonlinear interaction        0.007800
-EXPANDER recovery                     0.211850
-
-MODULAR mean recovery                 0.223308
-MODULAR median recovery               0.209767
-MODULAR maximum recovery              0.468354
-MODULAR <= 0.50 recovery              15/15
-
-gap ratio MODULAR/GEO                 0.814 .. 1.131
-mean gap ratio                        1.006
-minimum nonlocal-edge fraction        0.879
-maximum clustering/GEO ratio          0.340
-maximum node-strength relative error  9.49e-11
-all connected / exact degree          yes
-```
-
-**Gate 4 PASS.**
-
-Kill:
-
-> low spectral gap / slow global mixing by itself explains the strong relation.
-
-Random modular bottlenecks can reproduce GEO's global slow-mixing scale and still recover only ~22% of the nonlinear relation.
+This supports signal/topology alignment, not 3-D necessity and not a universal biological claim.
 
 See:
 
 ```text
-docs/GATE4_RESULT.md
-receipts/gate4_low_gap_confirm5.json
+docs/GATE5_BOUNDARY_ALIGNMENT_PREREG.md
+docs/GATE5_RESULT.md
+receipts/gate5_boundary_alignment_confirm8.json
 ```
 
-## Current residual — follow this
+## What the object now looks like
 
-The candidate object is increasingly **relational topology**, not a global scalar:
+The surviving mechanism is increasingly:
 
 ```text
-where sources enter
-      +
-where routes remain separate
-      +
-where routes are forced to meet
-      +
-where the soma/readout sits
-            ↓
+fixed topology
+ + where inputs land
+ + which inputs arrive together
+        ↓
 local current history
-            ↓
+        ↓
 fixed-budget mass redistribution
-            ↓
-persistent pair relation
-            ↓
+        ↓
+persistent relation between routes
+        ↓
 distributed local nonlinearity
-            ↓
-interaction
+        ↓
+pairwise interaction
 ```
 
-Gate 4 says arbitrary bottlenecks elsewhere in the graph are insufficient.
+This is closer to a dendritic computational abstraction than a 3-D picture is. The key candidate primitive is **arranging where signals stay distinct and where they are allowed to meet**.
 
-### Immediate next causal attacker: aligned corridors
+## Next gate — composition, not another topology statistic
 
-Construct non-geometric graphs with matched degree/strength and similar broad mixing statistics, but manipulate **alignment to signal traffic**:
+Stop proving one pair forever.
 
-```text
-ALIGNED
-  corridor/community structure deliberately separates the relevant source routes
-  and controls where they converge toward soma
+Ask:
 
-MISALIGNED
-  same structural recipe/statistics but port identities are permuted relative to it
+> Can one fixed mass budget experience several pair relations and later expose a structured interaction matrix without explicit pair-specific learned weights?
 
-RANDOM
-  Gate-4 style unrelated partition
-```
+A clean first composition task should use more terminals and train multiple matched coactivity statistics while keeping every terminal's marginal activity equal. After freezing morphology, probe every terminal pair and ask whether the learned interaction matrix recovers the training relation graph.
 
-Do not hand-design a dendritic answer too strongly. Prefer an algorithmic construction from port distances / graph distances, then attack it with role permutation.
+Mandatory controls:
 
-Question:
+- same marginal terminal counts across relation programs;
+- fixed total structural mass;
+- no pair-specific learned edges/readout weights;
+- shuffled structural mass;
+- uniform/no-plasticity substrate;
+- ordinary explicit pair-table attacker with byte/parameter accounting;
+- test held-out seeds and relation graphs;
+- do not reward merely storing one scalar per pair under another name.
 
-> Does matching topology to the signal boundary conditions recover the strong relation without Euclidean coordinates?
-
-If yes, Sunday has isolated something closer to a dendritic primitive: **computation by arranging where signals stay distinct and where they may interact**.
-
-If no, kill this alignment hypothesis and move on.
-
-### Composition gate after the topology mechanism
-
-Once the topology residual is clearer, ask whether one fixed mass budget can store several pair relations at once and expose them in a frozen interaction matrix without explicit pair-specific weights. That is closer to an actual calculating primitive than another routing plot.
+If composition fails, Sunday remains an interesting pairwise plastic routing phenomenon rather than a general calculating primitive.
 
 ## Hard stop lines
 
-- total structural mass stays fixed unless a gate explicitly tests growth;
-- no explicit pair-specific learned edge weights while claiming morphology stores pair relation;
-- renderer is read-only; no pixel recurrence;
-- no hand-designed dendritic tree;
+- fixed total material unless a gate explicitly tests growth;
+- no learned pair-specific edge weights while claiming morphology stores relations;
+- rendering read-only;
 - Gate 0 is linear routing;
 - Gate 1 is not established Hebbian binding;
-- 3-D coordinates are not the current computational primitive;
-- Gate 3 did not establish clustering as causal;
-- Gate 4 killed slow global mixing as a sufficient explanation;
-- no faces, VKITTI, CLIP, oscillations, ferroic memory, QM phase, growth or autonomous visual recurrence until a specific residual calls for them.
+- 3-D coordinates are not the current primitive;
+- clustering not established causal;
+- slow global mixing insufficient;
+- Gate 5 alignment does not guarantee nonlinear sign on every graph;
+- no faces/VKITTI/CLIP/oscillations/ferroic/QM/growth/autonomous visual recurrence unless a specific residual requires them.
 
-## QM / phase side thought
+## QM / Feigenbaum notes
 
-Park it. Current Sunday has no complex phase, tunneling, quantum interference, or exclusion law. If complex/U(1)-like local state is tested later, it must beat a matched two-real-channel control at equal state/parameter/work budget. Do not use it to explain Gate 1 retroactively.
-
-## Feigenbaum note
-
-Still parked. No evidence yet for fractal branching, bifurcation cascades or self-similar morphology. If such structure emerges without being planted, quantify it then.
+Both remain parked. Current Sunday has no complex phase or quantum mechanism, and no emergent fractal branching result. If either is introduced later, it needs its own matched attacker and receipt rather than a retrospective story.
