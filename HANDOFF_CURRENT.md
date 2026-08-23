@@ -25,6 +25,7 @@ sol/gate0-signal-carved-microarbor
 sol/gate1-local-nonlinear-overlap
   inherits Gate 0
   Gate 1 implementation + held-out confirmation
+  Gate 1 operating-point robustness attacker
   CURRENT ACTIVE BRANCH
 ```
 
@@ -177,6 +178,38 @@ Full stored confirmation:
 python experiments/gate1_local_nonlinear_overlap.py --seed-start 240000 --seeds 20 --json
 ```
 
+## Gate 1 robustness attacker — survives first operating sweep
+
+The original nonlinear probe used one point: `gamma=50`, amplitude `10`. A fresh confirmation range `260000..260005` swept:
+
+```text
+gamma     5, 10, 20, 50, 100
+amplitude 2, 5, 10
+```
+
+That is 15 operating points, six new clouds, two learned pair effects per point: **180 pair effects**.
+
+Receipt:
+
+```text
+expected sign                         180/180
+minimum grid-cell positive fraction  1.00
+minimum observed separation          5.90e-05
+weakest cell mean separation         1.26e-04
+```
+
+So the Gate 1 sign is not a one-setting accident. The effect becomes very small at weak saturation and grows smoothly with operating strength.
+
+Files:
+
+```text
+experiments/gate1_robustness_sweep.py
+docs/GATE1_ROBUSTNESS_SWEEP.md
+receipts/gate1_robustness_confirm6.json
+```
+
+This is still only one nonlinear family and one learning/geometry regime.
+
 ## What Gate 1 may mean
 
 The strongest current interpretation is not "a neuron has been built." It is:
@@ -209,10 +242,10 @@ If later dynamics produce branching, repeated motifs, bifurcation cascades or se
 
 Before Gate 2 gets a grand name:
 
-1. **Robustness sweep** — vary local nonlinear strength and probe amplitude. Gate 1 must not exist at one tuned operating point.
-2. Vary overlap radius, learning rate and mass floor.
+1. Vary overlap radius, learning rate, mass floor and port placement.
+2. Replace cubic saturation with a qualitatively different local nonlinear family.
 3. **Abstract-graph attacker** — discard xyz after constructing the graph and ask what, if anything, 3-D locality contributes beyond a sparse graph parameterization.
 4. **Composition gate** — can several learned pair relations support a real discrimination/calculation without adding explicit pair weights?
-5. Only then consider persistent local state/hysteresis, order sensitivity, autonomous passing modes, or actual growth.
+5. Only then consider persistent local state/hysteresis, order sensitivity, autonomous passing modes, actual growth, or visual/world-model data.
 
 The project is currently interesting because each new mechanism has been forced to answer for a specific residual. Keep it that way.
