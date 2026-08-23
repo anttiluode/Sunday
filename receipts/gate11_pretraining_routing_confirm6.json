@@ -1,0 +1,43 @@
+{
+  "gate": "Gate 11 pre-training semantic routing",
+  "gate_pass": true,
+  "seed_start": 480000,
+  "seed_count": 6,
+  "candidate_count": 18,
+  "target_distances": [1, 2, 2],
+  "metrics": {
+    "mean_pearson": 0.936924538312765,
+    "mean_spearman": 0.9333333333333335,
+    "mean_shuffle_pearson": -0.1026673255748342,
+    "mean_shuffle_spearman": -0.06666666666666667,
+    "pearson_advantage_over_shuffled": 1.0395918638875992,
+    "spearman_advantage_over_shuffled": 1.0000000000000002,
+    "fraction_best_beats_worst": 1.0,
+    "mean_best_finite_contrast": 0.0015450399047026062,
+    "mean_absolute_worst_finite_contrast": 0.00012464995399203595,
+    "pooled_best_to_abs_worst_ratio": 12.395029883455239,
+    "mean_universal_best_finite_contrast": 0.0011958934848312357,
+    "mean_universal_worst_finite_contrast": 0.0001664668244725357,
+    "local_to_universal_best_ratio": 1.291954446027141,
+    "max_finite_mass_budget_error": 5.684341886080802e-14,
+    "max_one_step_write_mass_sum_error": 4.54081217071689e-14,
+    "all_finite": true
+  },
+  "thresholds": {
+    "pearson_min": 0.70,
+    "spearman_min": 0.65,
+    "best_worst_fraction_min": 0.8333333333333334,
+    "best_worst_ratio_min": 2.5,
+    "pearson_advantage_min": 0.40,
+    "spearman_advantage_min": 0.35,
+    "mass_error_max": 1e-10
+  },
+  "per_seed": [
+    {"seed":480000,"pearson":0.9686700017810187,"spearman":0.9833333333333336,"shuffle_pearson":-0.16394325999544732,"shuffle_spearman":-0.2,"best_name":"R07","worst_name":"R08","best_score":0.3031093979772212,"worst_score":0.12038244792318377,"best_finite_contrast":0.002385650287091935,"worst_finite_contrast":0.0002284567721115629,"best_sign_fraction":1.0,"worst_sign_fraction":0.8333333333333334,"best_trained_unused":1.5996451837828256,"worst_trained_unused":1.0072940685200409,"universal_best_finite":0.0009759668115897994,"universal_worst_finite":0.00027273175865267715},
+    {"seed":480001,"pearson":0.9541073893356998,"spearman":0.9333333333333335,"shuffle_pearson":-0.026398620122056442,"shuffle_spearman":-0.05,"best_name":"R03","worst_name":"R05","best_score":0.29440708897474016,"worst_score":0.12146364628300874,"best_finite_contrast":0.0015322659895188426,"worst_finite_contrast":0.0000635296524583379,"best_sign_fraction":1.0,"worst_sign_fraction":0.6666666666666666,"best_trained_unused":1.3241173179162753,"worst_trained_unused":1.3105547828524333,"universal_best_finite":0.0009750040191666712,"universal_worst_finite":0.0000635296524583379},
+    {"seed":480002,"pearson":0.925524950330076,"spearman":0.8166666666666668,"shuffle_pearson":0.19594372548339212,"shuffle_spearman":0.2666666666666667,"best_name":"R02","worst_name":"R01","best_score":0.26243065751650496,"worst_score":0.08436672201725703,"best_finite_contrast":0.0013887141198916225,"worst_finite_contrast":0.00006611446463992976,"best_sign_fraction":1.0,"worst_sign_fraction":0.6666666666666666,"best_trained_unused":1.1851629926603338,"worst_trained_unused":1.2727002449200142,"universal_best_finite":0.0013887141198916225,"universal_worst_finite":0.0002727407009818139},
+    {"seed":480003,"pearson":0.8717060294421115,"spearman":0.9500000000000002,"shuffle_pearson":0.1375659957044357,"shuffle_spearman":0.06666666666666668,"best_name":"R04","worst_name":"R05","best_score":0.23521411509877024,"worst_score":0.07627307188557146,"best_finite_contrast":0.0009327932635567949,"worst_finite_contrast":0.00007061560102743817,"best_sign_fraction":1.0,"worst_sign_fraction":0.6666666666666666,"best_trained_unused":0.6309304368747172,"worst_trained_unused":0.9396403399087958,"universal_best_finite":0.0009756411803509361,"universal_worst_finite":0.00007061560102743817},
+    {"seed":480004,"pearson":0.9381304363482995,"spearman":0.9666666666666668,"shuffle_pearson":-0.44591761047998923,"shuffle_spearman":-0.45000000000000007,"best_name":"R03","worst_name":"R05","best_score":0.2822668059890749,"worst_score":0.10721260215193637,"best_finite_contrast":0.0014895862728207373,"worst_finite_contrast":0.00020356537511238287,"best_sign_fraction":1.0,"worst_sign_fraction":0.8333333333333334,"best_trained_unused":1.16712323407564,"worst_trained_unused":0.8414261827928632,"universal_best_finite":0.0012403722735541153,"universal_worst_finite":0.00020356537511238287},
+    {"seed":480005,"pearson":0.9634084226393844,"spearman":0.9500000000000002,"shuffle_pearson":-0.3132541840393401,"shuffle_spearman":-0.03333333333333334,"best_name":"R07","worst_name":"R05","best_score":0.2996433129075274,"worst_score":0.11348460620687519,"best_finite_contrast":0.0015412294953357048,"worst_finite_contrast":0.0001156178586025642,"best_sign_fraction":1.0,"worst_sign_fraction":0.6666666666666666,"best_trained_unused":1.2392760282203323,"worst_trained_unused":1.0540976477701625,"universal_best_finite":0.0016196625044342702,"universal_worst_finite":0.0001156178586025642}
+  ]
+}
