@@ -1,0 +1,51 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5"
+  },
+  "thresholds": {
+    "selectivity_min": 1.2,
+    "uniform_gain_min": 1.2,
+    "shuffle_gain_min": 1.35,
+    "shuffle_count": 40
+  },
+  "metrics": {
+    "seed": 230826,
+    "n_elements": 256,
+    "mass_budget": 256.0,
+    "mass_sum_A": 256.0,
+    "mass_sum_B": 255.99999999999997,
+    "uniform_peak_A": 0.00009759775463446984,
+    "uniform_peak_B": 0.00010031174528936952,
+    "A_trained_peak_A": 0.00013566174376153752,
+    "A_trained_peak_B": 0.0001021099653748136,
+    "B_trained_peak_A": 0.00009432185142604076,
+    "B_trained_peak_B": 0.00014593370727999743,
+    "A_selectivity": 1.3285847592207665,
+    "B_selectivity": 1.5471887486689797,
+    "A_uniform_gain": 1.3900088610606636,
+    "B_uniform_gain": 1.4548017967290083,
+    "A_shuffle_median": 0.00007809896267691179,
+    "B_shuffle_median": 0.00008336123974475358,
+    "A_shuffle_gain": 1.737049239984885,
+    "B_shuffle_gain": 1.750618245683923,
+    "observer_identical": true,
+    "A_mass_min": 0.21430438347350134,
+    "A_mass_max": 7.5993887437576415,
+    "B_mass_min": 0.21373716038064763,
+    "B_mass_max": 7.553127017892359
+  },
+  "checks": {
+    "A_selective": true,
+    "B_selective": true,
+    "A_beats_uniform": true,
+    "B_beats_uniform": true,
+    "A_geometry_matters": true,
+    "B_geometry_matters": true,
+    "A_budget_exact": true,
+    "B_budget_exact": true,
+    "observer_is_read_only": true
+  },
+  "gate_pass": true,
+  "interpretation": "Gate 0 establishes signal-written spatial transfer geometry only. Frozen fast dynamics remain linear and must face a superposition attacker before any dendritic-computation claim."
+}
