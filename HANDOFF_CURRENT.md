@@ -6,15 +6,15 @@ Date: 2026-08-23
 
 Restart from receipts, not from the 3-D/dendrite/QM metaphor.
 
-Sunday's live object is now both measurable **and controllable**:
+Sunday's current object is now:
 
-> **A fixed graph and local structural rule induce an anisotropic relation-space operator. Dormant one-step responses predict that operator, and the dormant write geometry can be used before training to choose a physical routing for a semantic relation.**
+> **A fixed graph and local structural rule induce an anisotropic relation-space operator. Dormant one-step responses predict most of that operator and can be used before training to choose physical routings for semantic relations.**
 
-The remaining limitation is important: Gate 11 controls **registered relation contrast**, not guaranteed selectivity against unused pair responses.
+Gate 12 tested whether adding dormant READ information robustly improves that routing beyond Gate 11's already strong WRITE-only score. It **failed narrowly**. Do not round it into a pass.
 
-The strongest next practical residual is therefore:
+The live residual is therefore not “find a nicer utility.” It is:
 
-> **Can dormant write+read information choose a geometry-matched routing that will produce a clean/selective relation code, not merely a stronger registered contrast?**
+> **Can we predict from dormant state when read-aware routing will differ enough from write-only routing to be worth using?**
 
 ## Lineage
 
@@ -22,7 +22,7 @@ The strongest next practical residual is therefore:
 Gate 0   signal writes spatial transfer                 PASS
          frozen dynamics linear                         calculation claim KILLED
 Gate 1   matched coactivity writes pair relation        PASS
-Gate 2   xyz erased with same graph                     EXACT TIE / 3-D primitive KILLED
+Gate 2   same graph with xyz erased                     EXACT TIE / 3-D primitive KILLED
 Gate 3   locality destruction weakens relation          clustering-only explanation FAIL
 Gate 4   matched low-gap attacker                       slow mixing sufficiency KILLED
 Gate 5   semantic/topology boundary alignment           PASS
@@ -30,14 +30,12 @@ Gate 6   six-terminal compositional relation matrix     PASS / explicit table ch
 Gate 7   additive & multiplicative endpoint scalars     KILLED
 Gate 8   arbitrary/isotropic relation memory            FAIL / KILLED
 Gate 9   16-code relation-space tomography              PASS
-         empirical q -> dI map nearly linear
 Gate 10  dormant one-step write/read Jacobian           PASS
-         predicts most finite operator geometry
-Gate 11  pre-training semantic routing                  PASS
-         dormant ||qW|| predicts geometry-matched writability
+Gate 11  pre-training WRITE routing                     PASS
+Gate 12  read-aware clean routing                       FAIL narrowly
 ```
 
-## Gates 6–8 — relation memory, then the useful failure
+## Gates 6–8 — relation memory and anisotropy
 
 Gate 6 fresh `380000..380009`:
 
@@ -56,23 +54,11 @@ held-out additive trained signs    1/60
 negative multiplicative cycle      10/10
 ```
 
-Gate 8 then deliberately asks whether several balanced relation codes are equally writable. They are not:
+Gate 8 then shows that several balanced relation directions are not equally writable. This kills the isotropic pair-table story and exposes a writable relation geometry.
 
-```text
-                     sign      trained/unused     specificity     self-top
-C0                   1.000          9.487x          10.266x        6/6
-C1                   0.917          1.089x           1.506x        6/6
-C2                   0.778          4.169x           2.999x        6/6
-C3                   0.833          0.305x           0.611x        1/6
-```
+## Gate 9 — relation-space tomography PASS
 
-That failure killed the isotropic pair-table story and exposed a **writable relation geometry**.
-
-## Gate 9 — tomography PASS
-
-Enumerate all 16 controlled geometry-balanced perfect-matching contrasts. Their 15-edge input vectors span rank 7.
-
-Leave one entire relation direction out, fit the map on the other 15, predict the unseen 15-pair output vector.
+All 16 controlled geometry-balanced perfect-matching contrasts span rank 7. Leave one whole relation direction out, fit on the other 15, predict the unseen 15-pair output.
 
 Fresh `440000..440003`:
 
@@ -88,22 +74,11 @@ rank-3 held-out cosine               0.954902
 cross-seed weakest-mode mean         0.902540
 ```
 
-Safe statement:
+Safe statement: over the controlled rank-7 relation-program span, finite learning/readout behaves approximately as a predictable linear cross-edge operator with most energy in about three preferred input modes.
 
-> Over the controlled rank-7 relation-program span, finite learning/readout behaves approximately as a predictable linear cross-edge operator with most energy in about three preferred input modes.
+## Gate 10 — dormant write/read mechanism PASS
 
-## Gate 10 — dormant mechanism PASS
-
-For each of 15 coactive physical terminal pairs, from uniform dormant mass:
-
-```text
-one teacher episode + one redistribution
-w_e = one-step mass displacement
-```
-
-Then measure dormant read sensitivity along each `w_e` and compose the first-order operator.
-
-One global amplitude gain is frozen from development only; no fresh per-substrate fitting.
+For each of 15 coactive physical terminal pairs, start from uniform mass, perform one ordinary teacher episode and one redistribution, giving pair-specific write direction `w_e`. Measure dormant nonlinear read sensitivity along each `w_e` and compose the first-order operator.
 
 Fresh `460000..460003`:
 
@@ -113,131 +88,161 @@ mean per-direction cosine                   0.969453
 dormant projected top-3 energy              0.964520
 weakest dormant-vs-finite mode mean         0.918134
 
-write-only attacker NMSE                    0.916042
+write-only output attacker NMSE             0.916042
 same-permutation write-location attacker    0.920388
 ```
 
 Safe statement:
 
-> Most dominant relation geometry is already latent in the dormant graph's one-step write directions composed with dormant nonlinear read sensitivity; long training mainly amplifies and perturbs it.
+> Most dominant relation geometry is already latent in dormant one-step write directions composed with dormant nonlinear read sensitivity; long training mainly amplifies and perturbs it.
 
-Scar: seed `460001` has third-mode cosine `0.698` despite good overall output prediction. Do not call each singular direction rigid.
+## Gate 11 — pre-training WRITE routing PASS
 
-## Gate 11 — pre-training routing PASS
+Target semantic relation is fixed to historically weak C3. Keep only semantic-to-physical mappings where both arms have exact circular distance multiset `(1,2,2)`. Exactly 18 assignments remain, so circular geometry alone ties them all.
 
-Target semantic relation is fixed to historically weak `C3`.
-
-Consider semantic-to-physical terminal mappings, but remove the easy geometry explanation by keeping only assignments where both physical arms have exact circular distance multiset
-
-```text
-(1,2,2).
-```
-
-Exactly 18 distinct oriented assignments remain. Every geometry-only circular-distance score is therefore tied.
-
-Before any finite training, compute dormant one-step write matrix `W` and score each assignment by
+Before training, score each assignment by
 
 ```text
 s(q) = ||q W||.
 ```
 
-Then train **all 18** and compare the complete dormant ranking against finite registered contrast.
+Then train all 18.
 
 Fresh `480000..480005`:
 
 ```text
-mean Pearson(score, finite contrast)             0.936925
-mean Spearman                                    0.933333
-
-pair-label-shuffled W Pearson                   -0.102667
-pair-label-shuffled W Spearman                  -0.066667
-Pearson advantage                                1.039592
-Spearman advantage                               1.000000
-
-preregistered BEST > WORST                       6/6
-mean BEST contrast                               0.00154504
-mean |WORST| contrast                            0.00012465
-BEST / |WORST|                                   12.395x
+mean Pearson(score, finite contrast)          0.936925
+mean Spearman                                 0.933333
+pair-label-shuffled W Pearson                -0.102667
+pair-label-shuffled W Spearman               -0.066667
+BEST > WORST                                  6/6
+BEST / |WORST| finite contrast                12.395x
 ```
 
-The row-label attacker preserves the exact set and singular spectrum of dormant write vectors, but scrambles which physical pair owns each trace. It loses prediction. Physical pair ownership is load-bearing.
+A development-fixed universal route is already useful, but substrate-specific `W` raises mean BEST contrast about 29%.
 
-### Universal versus substrate-specific routing
+Gate-11 scar: maximizing write strength does not guarantee low leakage. Fresh `480003` BEST has trained/unused only `0.631x` despite all registered signs being correct.
 
-A fixed development-average routing is already good:
+## Gate 12 — read-aware clean routing FAIL
+
+Gate 12 keeps the exact same C3 target and 18 geometry-matched assignments.
+
+Before training, use Gate 10's dormant operator
 
 ```text
-universal BEST mean finite contrast              0.00119589
-substrate-specific W BEST                        0.00154504
-local / universal                                1.292x
+y0(q) = q B0
 ```
 
-So there is a strong graph-family-level routing preference plus an additional substrate-specific advantage. Do not claim local BEST wins every seed; universal happens to beat it slightly on `480003` and `480005` because the dormant score is predictive, not exact.
-
-### Gate-11 limitation
-
-BEST was chosen to maximize registered signed contrast. It does **not** guarantee low leakage.
-
-Fresh `480003` is the scar:
+and define the fixed clean utility
 
 ```text
-BEST registered sign fraction          1.000
-BEST trained / unused magnitude        0.631x
+contrast(q,y) = (q . y) / 6
+cosine(q,y)   = (q . y) / (||q|| ||y||)
+U(q,y)        = contrast(q,y) * |cosine(q,y)|
 ```
 
-The intended relation is strengthened, yet unused pair responses can still be larger.
+READ-AWARE chooses max predicted `U`.
+
+Attackers:
+
+```text
+WRITE-ONLY       max ||qW||
+CONTRAST-ONLY    max contrast(q, qB0)
+```
+
+Development seeds `490000..490003` were consumed only to freeze thresholds. Fresh evidence is `500000..500005`.
+
+### Fresh receipt
+
+```text
+mean predicted-U / finite-U Pearson             0.939125   PASS
+mean Spearman                                    0.863889   PASS
+
+READ finite U >= WRITE finite U                  6/6        PASS
+mean READ clean utility                          0.0007218965
+mean WRITE clean utility                         0.0006704296
+READ / WRITE clean utility                       1.076767x
+required                                         >=1.080000x  FAIL
+
+mean CONTRAST-ONLY clean utility                 0.0006780098
+READ / CONTRAST-ONLY clean utility               1.064729x   PASS
+
+mean READ trained/unused                         1.351945x
+mean WRITE trained/unused                        1.049575x
+READ / WRITE selectivity                         1.288088x   PASS
+
+READ / WRITE registered contrast                 1.002614x   PASS
+mean READ trained-edge sign fraction             0.916667    PASS
+```
+
+**Gate 12 fails because `1.076767 < 1.08`. Do not rescue it by rounding.**
+
+### What nevertheless survived
+
+Preregistered secondary blocks say something real:
+
+- dormant `B0` predicts route-level clean utility strongly across all 18 assignments;
+- the read-aware cleanliness term beats a contrast-only router by `1.0647x`;
+- mean trained/unused selectivity improves by `1.288x` while mean registered contrast is unchanged;
+- the read-aware route beats or ties write-only on every fresh seed;
+- but three of six seeds choose the same READ and WRITE route, leaving pooled incremental utility just below the registered minimum.
+
+Important scars:
+
+```text
+500001   READ R02 vs WRITE R00
+         clean utility ~1.88x higher
+         selectivity 0.686 -> 1.533
+
+500002   READ ties WRITE R07 but beats CONTRAST R00
+         cleanliness term itself matters
+
+500004   READ R00 vs WRITE R02
+         selectivity 0.788 -> 1.756
+         but contrast falls and only 4/6 trained signs are correct
+```
 
 Safe statement:
 
-> **Dormant write geometry can route a semantic relation into a more writable physical assignment before training, beyond matched circular geometry, but this alone does not guarantee a clean/selective relation representation.**
+> **Dormant read information is predictive and can materially improve routing on some substrates, especially selectivity, but Gate 12 did not establish the preregistered minimum robust incremental clean-utility gain over Gate 11's write-only router.**
 
-## Current residual — pre-train for selectivity
+## Current residual — predict when READ matters
 
-Gate 10 already gives more information than Gate 11 used. Gate 11 used only the WRITE magnitude `||qW||`; Gate 10 can predict the whole dormant first-order output vector
+Do **not** lower `1.08`, retune the same utility, or rerun C3 until it passes.
 
-```text
-q -> y0 = q B0
-```
-
-where `B0` composes one-step write directions with dormant nonlinear read sensitivity.
-
-A strong Gate 12 should keep the **same fixed C3 semantic target and the same 18 geometry-matched assignments**, but rank assignments before training by a read-aware objective that penalizes predicted unused-edge leakage.
-
-For candidate physical `q`, possible preregistered score:
+The useful phenomenon is now the disagreement structure:
 
 ```text
-predicted y0 = q B0
-predicted own = (q dot y0) / 6
-predicted leakage = mean |y0_e| over q_e == 0
-quality = predicted own / (predicted leakage + eps)
+some substrates: READ == WRITE assignment
+other substrates: READ != WRITE and gains can be large
 ```
 
-Do not tune this on fresh seeds.
+A clean next gate would use dormant quantities only to predict, before finite training, whether a substrate/candidate family lies in a high-disagreement regime where read-aware routing should matter.
 
-Then train all 18 on fresh substrates and test whether the dormant quality ranking predicts finite:
+Possible dormant diagnostics to preregister and attack:
 
 ```text
-trained / unused magnitude
-own-vs-cross specificity
-or a fixed combined quality metric
+angle / principal-angle gap between write-only and write+read preferred modes
+ranking disagreement between ||qW|| and U(q,qB0)
+spread between top candidate scores
+read-induced rotation magnitude ||qB0 - alpha qW_like||
+leakage predicted specifically on the WRITE-best route
 ```
 
-Attackers should include:
+Then test a policy such as:
 
 ```text
-Gate-11 write-only ||qW|| ranking
-circular geometry (tied by construction)
-pair-label-shuffled dormant B0
-fixed universal assignment from development
+if dormant disagreement is small: use cheap WRITE routing
+if dormant disagreement is large: pay for READ-aware routing
 ```
 
-The important question is whether dormant READ information buys something beyond write strength.
+The policy must be chosen on development and tested on new substrates/tasks. The target should be **decision value**, not another post-hoc correlation.
 
-If yes, Sunday can choose not only where a relation is easiest to write, but where it will be **read cleanly**.
+A second clean option is to construct a new candidate family where WRITE strength and READ cleanliness are deliberately decorrelated by design, then test whether read-aware routing wins prospectively. Do not search that family using fresh outcomes.
 
-## Secondary residual — derive W from ordinary graph quantities
+## Secondary mechanistic residual — derive W from graph quantities
 
-After control is established, explain the write geometry without running teacher episodes. Candidate mechanisms:
+Gate 11/12 still require teacher episodes to measure dormant `W`. A deeper mechanism would predict `W` from ordinary graph structure:
 
 ```text
 terminal-to-soma current-flow overlap
@@ -261,9 +266,10 @@ Gate 3 already blocks clustering alone; Gate 4 blocks spectral-gap alone.
 - Gate 6 has no efficiency advantage over explicit tables;
 - Gate 8 killed arbitrary/isotropic relation memory;
 - Gate 10 is first-order approximate, not exact finite dynamics;
-- Gate 11 controls contrast, not guaranteed selectivity;
+- Gate 11 controls writability/contrast, not guaranteed selectivity;
+- Gate 12 is a **failed** incremental-control gate despite strong secondary evidence;
 - no QM/phase/ferroic/growth/visual-world mechanism until a demonstrated residual requires it.
 
 ## Instanton / QM / Feigenbaum
 
-Parked. The instanton side supplied useful artifact controls and a separate negative self-carving result, but nothing in Sunday's current mechanism requires tunneling, phase, or fractal growth.
+Parked. Nothing in the live Sunday residual requires tunneling, phase, or fractal growth.
