@@ -1,0 +1,26 @@
+{
+  "audit": "six-terminal ring symmetry / spectral null",
+  "seed_start": 522000,
+  "seed_count": 4,
+  "relation_span_rank": 7,
+  "harmonic_sector_dimensions": {"k1":2,"k2":4,"k3":1},
+  "geometry_only_3d_candidate": "nearest-neighbour edge-orbit k=2 harmonic copy plus k=3 parity harmonic",
+  "metrics": {
+    "mean_finite_top3_energy_fraction": 0.978094784037016,
+    "mean_geometry_only_3d_weakest_principal_cosine": 0.8587222829572476,
+    "mean_geometry_only_3d_capture": 0.8782524055193873,
+    "mean_broad_k2_plus_k3_weakest_principal_cosine": 0.9475055790018675,
+    "mean_broad_k2_plus_k3_capture": 0.9633059804240731,
+    "mean_harmonic_top3_fraction": {
+      "k1": 0.03669401957592761,
+      "k2": 0.6563930643947526,
+      "k3": 0.3069129160293204
+    }
+  },
+  "per_seed": [
+    {"seed":522000,"finite_top3_energy_fraction":0.9596456051231116,"geometry_only_3d_principal_cosines":[0.9887396941348744,0.9363301422342493,0.7768515344869932],"geometry_only_3d_capture":0.8192728748830435,"broad_k2_plus_k3_principal_cosines":[1.0,0.9951230034386068,0.8959706620449642],"broad_k2_plus_k3_capture":0.9310110730726553,"harmonic_top3_fraction":{"k1":0.0689889269273449,"k2":0.6646610368937255,"k3":0.2663500361789302}},
+    {"seed":522001,"finite_top3_energy_fraction":0.9835064859351619,"geometry_only_3d_principal_cosines":[0.9993723556689611,0.9547030286538134,0.8992625652283254],"geometry_only_3d_capture":0.9062920464723736,"broad_k2_plus_k3_principal_cosines":[1.0,0.9928321360637593,0.9693655984402465],"broad_k2_plus_k3_capture":0.9751284379467821,"harmonic_top3_fraction":{"k1":0.024871562053219314,"k2":0.6498751619792619,"k3":0.3252532759675198}},
+    {"seed":522002,"finite_top3_energy_fraction":0.9833697158675709,"geometry_only_3d_principal_cosines":[0.9934565344658445,0.960513599439146,0.8947711810393787],"geometry_only_3d_capture":0.9033859089996782,"broad_k2_plus_k3_principal_cosines":[1.0,0.9958918934758848,0.964569316179158],"broad_k2_plus_k3_capture":0.9740648764017709,"harmonic_top3_fraction":{"k1":0.025935123598230258,"k2":0.6451991484153426,"k3":0.32886572798642816}},
+    {"seed":522003,"finite_top3_energy_fraction":0.9858573292222195,"geometry_only_3d_principal_cosines":[0.9936199848699995,0.9583282559557007,0.8640038510742929],"geometry_only_3d_capture":0.8840587917224539,"broad_k2_plus_k3_principal_cosines":[1.0,0.9986162674713561,0.9601167393431012],"broad_k2_plus_k3_capture":0.973019534275084,"harmonic_top3_fraction":{"k1":0.026980465724915973,"k2":0.6658369102906807,"k3":0.30718262398440355}}
+  ]
+}
