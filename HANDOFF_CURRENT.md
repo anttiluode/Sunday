@@ -6,19 +6,15 @@ Date: 2026-08-23
 
 Restart from receipts, not from the 3-D/dendrite/QM metaphor.
 
-Sunday's live question is now:
+Sunday's live object is now much sharper than the original morphology story:
 
-> **What is the writable/readable subspace of pair-relation space induced by this fixed substrate and learning rule?**
+> **A fixed substrate plus a fixed local structural learning/readout rule induces an approximately linear, strongly anisotropic operator on controlled pair-relation space.**
 
-Gate 8 killed the broad claim that several balanced relation directions are equally writable. The surviving phenomenon is anisotropic: some relation directions are written cleanly, some diffusely, and some are rotated/suppressed.
+The next question is mechanistic:
 
-The next object is therefore the empirical finite-amplitude map
+> **Can that finite trained operator be predicted from the dormant substrate by a first-order write/read Jacobian, before 40-cycle training?**
 
-```text
-registered training direction q  --->  frozen differential readout dI
-```
-
-not another hand-picked code and not a richer mechanism.
+Do not add capacity, phase, growth, images, or biology before attacking that.
 
 ## Lineage
 
@@ -31,194 +27,216 @@ Gate 1  matched coactivity writes a pair relation       PASS
 
 Gate 2  same graph with xyz erased                      EXACT TIE
         3-D necessity                                   KILLED
-        non-geometric graph still carries weak effect
 
 Gate 3  locality destruction dial                       effect collapses
         clustering prereg                               FAIL
 
-Gate 4  non-geometric low-gap modular attacker          PASS
+Gate 4  low-gap non-geometric attacker                  PASS
         slow global mixing sufficient                   KILLED
 
-Gate 5  identical graph, input-role alignment changed   PASS
+Gate 5  same graph, input-role alignment changed        PASS
         signal/topology boundary alignment matters
 
 Gate 6  six-terminal relation-matrix composition        PASS
         60/60 trained relation signs correct
-        explicit pair table efficiency attacker         TABLE WINS
+        explicit pair table                             CHEAPER
 
-Gate 7  endpoint-factor null attack                     PASS
-        additive endpoint reduction                     KILLED
-        pure multiplicative sign factor                 KILLED
-        rank-2 / nonlinear endpoint embedding            OPEN
+Gate 7  endpoint-factor null                            PASS
+        additive endpoint scalar                        KILLED
+        multiplicative scalar sign factor               KILLED
 
-Gate 8  four independent balanced relation codes        FAIL
-        broad/isotropic relation-memory claim            KILLED
-        topology-filtered writable subspace              SURVIVES
+Gate 8  independent relation-code generality            FAIL
+        isotropic/arbitrary relation memory              KILLED
+        anisotropic writable relation space              SURVIVES
+
+Gate 9  writable-subspace tomography                    PASS
+        16 controlled codes, input span rank 7
+        held-out q -> dI operator prediction             PASS
+        scalar identity/gain                             KILLED
+        independent per-edge gains                       KILLED
+        ~3 preferred cross-seed-stable modes             SURVIVES
 ```
 
-## Gate 0 — route, not calculation
+## What survived Gates 0–5
 
-Fixed 256-element substrate, fixed mass budget, no birth/deletion/free learned edges. Signal history changes later transfer, but frozen dynamics obey exact superposition to floating precision. Gate 0 is adaptive routing/structural memory.
+- fixed total structural mass can store signal history by redistributing conductance;
+- frozen Gate-0 dynamics are linear routing, not already a calculating dendrite;
+- coordinates are not execution-time primitives once the graph exists;
+- Euclidean locality is a strong graph prior, but clustering alone did not explain the effect;
+- low spectral gap / slow global mixing is insufficient;
+- where semantic coactivity roles land relative to graph boundaries strongly affects the relation written.
 
-## Gate 1 — pair relation
+## Gate 6 — compositional pair relation PASS
 
-Matched programs `H_AB=[A+B],[C],[D]` and `H_CD=[C+D],[A],[B]` use identical terminal marginals.
-
-Fresh `240000..240019`:
-
-```text
-route sign                       20/20 both pairs
-nonlinear sign                   20/20 both pairs
-mean route separation            0.116056
-mean nonlinear separation        0.008948
-mass-shuffle signed ratio        ~0.04
-```
-
-Coactivity produces route **separation** under this fixed-budget current-reinforcement rule. Do not rewrite as Hebbian merging.
-
-## Gates 2–5 — what topology is doing
-
-Gate 2: coordinates are dead metadata after the graph is built. Erasing xyz with the same graph gives an exact tie. Euclidean locality survives only as a strong graph-construction prior.
-
-Gate 3: destroying locality progressively weakens the relation, but the preregistered clustering explanation missed (`rho=+.575 < +.60`). Clustering alone is not established causal.
-
-Gate 4: matching low spectral gap with random non-geometric modular graphs does not restore the effect. Mean nonlinear recovery is `0.223`; all 15 attackers stay below `0.5`. Slow global mixing is insufficient.
-
-Gate 5: with the **same graph**, moving the semantic coactivity pairing relative to community boundaries changes the nonlinear relation by about `4.34x` on average. Signal/topology boundary alignment matters, although one scar seed reverses nonlinear sign.
-
-## Gate 6 — relation-matrix composition PASS
-
-Six terminals. Two matched disjoint perfect matchings:
-
-```text
-M1: (1,2) (3,4) (5,6)
-M2: (2,3) (4,5) (6,1)
-```
-
-Train two copies, freeze, probe all 15 unordered pairs, and define `dI = I_T2 - I_T1`.
+Six terminals; two matched disjoint perfect matchings. Train two copies, freeze, probe all 15 unordered terminal pairs.
 
 Fresh `380000..380009`:
 
 ```text
 trained-edge expected signs            60/60
-seeds with all 6/6 correct             10/10
 mean signed trained-edge contrast      0.002666
-mean |trained dI|                      0.002666
-mean |unused dI|                       0.000217
 trained / unused magnitude             12.303x
 same-permutation mass-shuffle ratio    0.061
-mass budget error                      ~5.7e-14
 ```
+
+Safe statement: a fixed-budget distributed structural state can simultaneously encode several matched coactivity relations without explicit pair-specific learned weights.
+
+Do not claim efficiency. An explicit 15-entry relation table is vastly cheaper.
+
+## Gate 7 — endpoint scalar nulls PASS
+
+Fresh `400000..400009`:
+
+```text
+additive endpoint all-pair R^2 mean        0.0753
+additive held-out trained signs             1/60
+alternating-cycle contrast mean             0.018913  (endpoint-additive null requires 0)
+negative multiplicative cycle product       10/10
+```
+
+So the Gate-6 matrix is not merely six node scalars in additive disguise, and its sign code cannot be a pure `a_i a_j` factor.
+
+## Gate 8 — broad relation-code generality FAIL
+
+Four independent geometry-balanced code directions on fresh `420000..420005`:
+
+```text
+                     sign      trained/unused     specificity     self-top
+C0                   1.000          9.487x          10.266x        6/6
+C1                   0.917          1.089x           1.506x        6/6
+C2                   0.778          4.169x           2.999x        6/6
+C3                   0.833          0.305x           0.611x        1/6
+```
+
+The same-permutation shuffle still destroys ~90% of registered contrast. The failure therefore demoted the **isotropic/arbitrary relation memory** claim, not the structural-memory phenomenon.
+
+This failure suggested that the substrate rotates/suppresses relation directions rather than simply storing some and forgetting others.
+
+## Gate 9 — writable-subspace tomography PASS
+
+Enumerate every controlled perfect-matching contrast satisfying:
+
+```text
+same six physical terminals
+perfect matching on each arm
+no common trained edge between arms
+identical terminal marginals
+identical circular pair-distance multiset
+q and -q duplicates removed
+```
+
+There are 16 such directions. Their 15-edge code vectors span rank 7; deleting any one row still leaves rank 7.
+
+For each fresh substrate `440000..440003`, train all 16 directions and measure the frozen 15-pair output vector `y=dI`.
+
+Primary test: for each held-out relation direction, fit
+
+```text
+Q_train B ~= Y_train
+```
+
+on the other 15 and predict the complete unseen output vector `q_heldout B`.
+
+Fresh pooled receipt:
+
+```text
+mean full-linear LOO NMSE                    0.003138
+mean full held-out cosine                    0.996531
+
+scalar identity/gain attacker NMSE           0.807419
+edge-diagonal gain attacker NMSE             0.557227
+full/scalar error ratio                      0.003887
+full/diagonal error ratio                    0.005632
+
+mean top-3 operator energy                   0.977688
+mean rank-3 LOO NMSE                         0.037298
+mean rank-3 held-out cosine                  0.954902
+
+mean weakest top-3 input principal cosine
+across fresh substrate pairs                 0.902540
+
+max mass-budget error                        ~5.7e-14
+```
+
+All preregistered blocks pass.
 
 Safe statement:
 
-> A fixed-budget distributed structural state can simultaneously encode several matched coactivity relations such that a frozen nonlinear pair-interaction matrix distinguishes which relations belonged to which training program, without explicit pair-specific learned weights.
+> **Over the seven-dimensional controlled relation-program span, Sunday's fixed structural learning dynamics act approximately as a predictable linear write/read operator. Roughly 98% of the fitted operator energy lies in three singular modes, and the preferred three-dimensional input subspace is stable across fresh random substrates.**
 
-Do not claim efficiency. An explicit 15-entry pair table is dramatically cheaper.
+This explains Gate 8: C0/C1/C2/C3 were directions being passed through an anisotropic cross-edge operator, not four unrelated special cases.
 
-## Gate 7 — endpoint-factor null PASS
+## What Gate 9 killed
 
-Fresh `400000..400009` attacks the Gate-6 differential matrix with endpoint-only scalar models.
-
-For additive endpoint factors `dI(i,j)=a_i+a_j`, the exact alternating-cycle invariant requires
+Do not resurrect either explanation without a new intervention:
 
 ```text
-C = d12 - d23 + d34 - d45 + d56 - d16 = 0.
+y ~= g q                     scalar preserve/amplify model
+
+y_j ~= d_j q_j               independent physical-pair gains
 ```
 
-Fresh result:
+Both lose catastrophically to the held-out full operator. Cross-edge mixing is load-bearing.
+
+## Current residual — derive the operator
+
+Gate 9 measured `B`; it did not explain it.
+
+The clean mechanistic hypothesis is a first-order factorization around dormant uniform mass:
 
 ```text
-observed trained signs                       60/60
-mean C                                       0.018913
-minimum C                                    0.009918
-additive all-pair R^2 mean/max               0.0753 / 0.2448
-additive leave-one-trained-edge-out signs     1/60
-negative trained-cycle product seeds          10/10
+relation-program direction q
+          |
+          v
+teacher / eligibility response
+          |
+          v
+pair-specific mass-write directions       W
+          |
+          v
+mass perturbation
+          |
+          v
+frozen pair-interaction sensitivity       R
+          |
+          v
+predicted relation response
+
+              B_first_order ~ W R
 ```
 
-The negative six-cycle product also kills the pure multiplicative scalar sign model `a_i a_j`, whose cycle product must be nonnegative.
+A strong Gate 10 should build this without using 40-cycle trained outputs to fit its direction:
 
-Safe statement:
+1. start from the same dormant graph and uniform mass;
+2. for each of the 15 possible coactive terminal pairs, measure the **one-step structural write vector** produced by the existing teacher/eligibility/update rule;
+3. around dormant mass, measure how the 15 pair-interaction outputs change along those write directions using symmetric small perturbations;
+4. compose the resulting write/read Jacobian into a predicted 15x15 relation operator;
+5. restrict it to the rank-7 controlled `Q` span;
+6. compare its held-out predictions, singular spectrum and preferred input subspace with the independently measured finite-training Gate-9 operator on fresh substrates.
 
-> The Gate-6 relation matrix contains a reproducible edge/cycle-space component that cannot be reduced to one additive scalar per endpoint, and its registered sign code is incompatible with a pure multiplicative endpoint-sign factorization.
-
-Rank-2 / nonlinear endpoint embeddings remain open.
-
-## Gate 8 — independent relation codes FAIL
-
-Four preregistered rank-4 code directions compare disjoint perfect matchings while matching terminal marginals and, within each code, the circular pair-distance multiset.
-
-Fresh `420000..420005`:
+Attackers should include at least:
 
 ```text
-                     sign      own contrast     trained/unused     specificity     self-top
-C0                   1.000       0.002182           9.487x          10.266x          1.000
-C1                   0.917       0.001004           1.089x           1.506x          1.000
-C2                   0.778       0.002188           4.169x           2.999x          1.000
-C3                   0.833       0.000350           0.305x           0.611x          0.167
-
-pooled same-permutation shuffle ratio         0.1053
-mass budget error                              ~5.7e-14
+identity/scalar map
+edge-diagonal map
+write-only similarity (ignore read Jacobian)
+read-only endpoint/pair sensitivity if meaningful
+randomly permuted write directions preserving their norms
 ```
 
-Preregistered per-code thresholds required sign `>=.80`, own contrast `>=.00050`, trained/unused `>=2`, specificity `>=1.5`, self-top `>=.75`; all four directions had to pass.
-
-**Gate 8 fails.**
-
-The important scars are different:
-
-- C0 is a clean writable direction.
-- C1 remembers something but diffusely: trained pairs do not stand out from unused pairs.
-- C2 has strong/selective amplitude but narrowly misses the sign threshold (`.778 < .80`).
-- C3 is weak and rotated/non-specific: trained edges are weaker than unused ones and its own registered code is the largest projection only `1/6` times.
-
-The shuffle still destroys ~90% of registered contrast, so learned mass placement remains load-bearing. What died is the isotropic/arbitrary relation-memory story.
-
-Safe statement:
-
-> **Sunday supports pair-specific distributed relation memory, but its writable/readable relation space is strongly anisotropic.**
-
-## Current residual — Gate 9: writable-subspace tomography
-
-Stop choosing one code at a time.
-
-Enumerate a larger family of balanced perfect-matching contrasts satisfying the same terminal-marginal and geometry controls. Let each registered 15-edge direction be `q_r`, and measure the frozen output vector `y_r=dI` after the standard training schedule.
-
-Build matrices
-
-```text
-Q = rows of registered training directions q_r
-Y = rows of measured frozen relation vectors y_r
-```
-
-Then ask what map connects them.
-
-Primary measurements:
-
-```text
-own-direction gain              <q_r, y_r> / ||q_r||^2
-orthogonal leakage / rotation
-cross-code prediction
-singular spectrum of the empirical Q -> Y map
-cross-seed stability of preferred input/output modes
-same-permutation mass-shuffle destruction
-```
-
-The important attacker is **held-out direction prediction**. Fit a low-dimensional linear map on some relation directions and predict `dI` for unseen relation directions. Do not fit and score the same codes.
+The key falsifier is not in-sample matrix correlation. It is whether the dormant first-order operator predicts **unseen finite-training relation-direction outputs** and the preferred Gate-9 modes.
 
 Possible outcomes:
 
-1. **Low-rank stable operator.** A few preferred relation modes predict held-out outputs across seeds. Then Sunday has a compact topology-induced writable subspace.
-2. **High-rank but stable operator.** Many directions matter; the substrate still imposes a reproducible relation geometry.
-3. **Poor cross-direction prediction but stable per-code effects.** The write/read map is nonlinear or finite-amplitude context-dependent.
-4. **No cross-seed stable modes.** Demote further: the observed directions are substrate-instance idiosyncrasies.
+- **PASS:** the low-dimensional relation geometry is already latent in the dormant graph + local rule; long training amplifies it rather than inventing it.
+- **finite operator predictable but modes differ:** first-order response captures outputs but not the compact preferred subspace.
+- **write/read Jacobian fails:** the operator is generated by nonlinear structural evolution across training cycles.
 
-Only after this do we know whether capacity, topology adaptation, or a different learning rule addresses a demonstrated limit.
+## Secondary residuals — keep parked
 
-## Secondary residual — endpoint latent compression
-
-Gate 7 did not kill rank-2 / nonlinear endpoint embeddings of a single 15-entry output matrix. Keep this attacker alive, but do not confuse it with Gate 9. Gate 9 asks about the mapping **between relation directions and material responses**, not merely description length of one output.
+- Gate 7 did not kill rank-2/nonlinear endpoint embeddings of one output matrix. This is a description-length attacker, not the Gate-10 mechanism question.
+- Capacity/growth becomes justified only if a measured writable mode limit blocks a task we actually care about.
+- Image/world inputs should only enter after we know what information the current relation operator can and cannot represent.
 
 ## Hard stop lines
 
@@ -229,13 +247,12 @@ Gate 7 did not kill rank-2 / nonlinear endpoint embeddings of a single 15-entry 
 - 3-D coordinates are not the primitive;
 - clustering not established causal;
 - slow global mixing insufficient;
-- Gate 5 alignment does not guarantee nonlinear sign on every graph;
 - Gate 6 has no efficiency advantage over explicit tables;
 - Gate 7 kills scalar endpoint reductions only;
-- Gate 8 kills broad isotropic relation-memory generality for the current substrate/rule;
-- do not tune the mechanism to rescue C1/C2/C3 before measuring the writable subspace;
-- no QM/phase/ferroic/growth/visual-world mechanism until a specific residual requires it.
+- Gate 8 kills broad isotropic relation-memory generality;
+- Gate 9 establishes an empirical operator, not its mechanism;
+- no QM/phase/ferroic/growth/visual-world mechanism until a demonstrated residual specifically requires it.
 
-## QM / Feigenbaum / instanton
+## Instanton / QM / Feigenbaum
 
-Parked. The instanton-side work supplied useful negative controls about unstable vacua/readout artifacts and a separate reservoir experiment, but Sunday currently has no residual requiring tunneling, complex phase, fractal branching, or instanton dynamics. Do not merge that story back in by metaphor.
+Parked. The instanton-side work supplied useful negative controls about unstable vacua and readout artifacts, plus a separate wave-reservoir experiment whose self-carving rule failed its own shuffle/learning tests. Nothing in Gate 9 requires tunneling, complex phase, fractal branching, or instanton dynamics.
